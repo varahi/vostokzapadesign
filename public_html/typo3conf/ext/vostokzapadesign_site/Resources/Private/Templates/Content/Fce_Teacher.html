@@ -1,0 +1,45 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+	xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+	xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+	<f:layout name="Content" />
+
+	<f:section name="Configuration">
+		<flux:form id="teacher" options="{group: 'FCE'}">
+			<flux:form.sheet name="teacher" label="{f:translate(key: 'flux.teacher', extensionName: 'vostokzapadesign_site')}">
+				<flux:field.input name="title" label="{f:translate(key: 'teacher.title', extensionName: 'vostokzapadesign_site')}"/>
+				<flux:field.text name="position" enableRichText="0"  label="{f:translate(key: 'teacher.position', extensionName: 'vostokzapadesign_site')}"/>
+				<flux:field.file name="image" allowed="jpg,png,jpeg,gif" showThumbnails="1" label="{f:translate(key: 'teacher.image', extensionName: 'vostokzapadesign_site')}"/>
+				<flux:field.text name="text" enableRichText="1" label="{f:translate(key: 'teacher.text', extensionName: 'vostokzapadesign_site')}"/>
+			</flux:form.sheet>
+		</flux:form>
+	</f:section>
+
+	<f:section name="Preview">
+		<table width="100%" cellspacing="10" cellpadding="10">
+			<tr>
+				<td>{title}</td>
+			</tr>
+			<tr>
+				<td>{position -> f:format.html()}</td>
+        <td width="80" height="80" style="background-image:url('{v:site.url()}{image}');
+        	background-position:center center;background-size:cover;">
+				</td>
+			</tr>			
+		</table>
+	</f:section>
+	
+	<f:section name="Main">
+	<div class="row teacher">
+		<div class="col-md-3 col-sm-3">
+			<f:image src="{image}" alt="{title}" title="{title}" maxWidth="640c" />
+		</div>
+		<div class="col-md-9 col-sm-9 teacher__image">
+				<strong class="bigger">{title}</strong><br />
+      	<span class="lightgrey">{position}</span>
+       {text -> f:format.html()}			
+		</div>
+	</div> 
+	</f:section>
+</div>

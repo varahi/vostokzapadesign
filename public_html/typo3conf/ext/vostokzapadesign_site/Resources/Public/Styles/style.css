@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+
+/* Dummy
+-------------------------------------------------- */
+
+.contacts {
+	text-align: right;
+}
+.container {
+	width: 100%;
+}
+.logo img {
+	width: 242px !important;
+	height: 50px !important;
+}
+#c2734 img {
+	width: 100px !important;
+}
+
+.row {
+	margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* Devcompany new responsive */
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+p.align-right {
+	text-align: right;
+}
+
+span.news-list-morelink a {
+	display: none;
+}
+.news-image img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+
+.bigger {
+	font-size: 14px;
+}
+
+div.csc-textpic-imagecolumn, 
+td.csc-textpic-imagecolumn .csc-textpic-image {
+    margin-right: 16px !important;
+}
+.csc-textpic-intext-right-nowrap .csc-textpic-text { 
+	margin-right: 0px; 
+}
+.csc-textpic-intext-left-nowrap .csc-textpic-text { 
+	margin-left: 0px; 
+}
+.csc-textpic-intext-right-nowrap-250 .csc-textpic-text { 
+	margin-right: 0px; 
+}
+.csc-space-after-40 { 
+	margin-bottom: 40px !important; 
+}
+ul.paginator {
+	margin-top: -3px;
+	font-size: 14px;
+}
+
+
+.video {
+	position: relative;
+	padding-bottom: 65.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: auto; 
+	-webkit-overflow-scrolling:touch; 
+} 
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.col-md-3 img,
+.col-md-4 img,
+.col-md-6 img {
+	width: 100%;
+	height: auto;
+}
+.float-left {
+	float: left;
+}
+.lightgrey {
+  color: #A7A9AC;
+}
+
+.news-list-browse > .lightgrey {
+	position: relative;
+	top: -3px;
+}
+
+ul.paginator {
+	margin-bottom: 10px;
+}
+ul.paginator li {
+	padding: 1px 0;
+  background: none;
+  float: left;
+	list-style: none;
+  margin: 0 5px !important;
+}
+ul.paginator li.current {
+	margin-top: 2px !important;
+	padding: 1px 7px;
+  background: #A7A9AC !important;
+  color: #FFFFFF;
+}
+
+ul.paginator li:last-child {
+	display: none;
+}
+ul.paginator li.current {
+	display: block;
+}
+
+.content ul {
+	padding: 0 0 0 15px;
+	margin: 0;
+}
+.content ul li {
+	padding: 3px 0;
+	margin: 0;
+}
+.left-menu {
+	margin-bottom: 20px !important;
+}
+.text-center {
+	text-align: center;
+} 
+
+
+/* Table
+-------------------------------------------------- */
+
+table { 
+	font-size: 14px;
+	width: 100%; 
+	border-collapse: collapse; 	
+	margin-bottom: 25px !important;
+}
+table > tbody > tr:first-child > td  {
+	font-weight: bold !important;
+}
+table tr {
+	background: #fff !important;
+}
+table tr:nth-of-type(odd) { 
+	background: #eee !important;
+	border: 1px solid #ccc !important;	
+}
+table th { 
+	background: #333 !important; 
+	color: white !important; 
+	font-weight: bold !important;
+}
+table td, th { 
+	padding: 6px 5px 6px 10px !important;
+	border: 1px solid #ccc !important;
+	text-align: left !important;
+}
+
+ul,
+ul span,
+ul li {
+	background: transparent !important;
+}
+
+table.YMaps-b-balloon-frame {
+	width: auto;
+	margin-bottom: 0 !important;	
+}
+table.YMaps-b-balloon-frame tr:nth-of-type(odd) { 
+	background: none !important;
+	border: none !important;
+}
+table.YMaps-b-balloon-frame th { 
+	background: transparent !important; 
+	color: #000 !important; 
+	font-weight: normal !important;
+}
+table.YMaps-b-balloon-frame td, th { 
+	padding: 0 !important;
+	border: none !important;
+	text-align: left !important;
+}
+
+
+.YMaps table td { padding: 0; }
+.YMaps-b-balloon-content div { padding:0 5px;}
+
+#YMapsID_2 {
+	width: 100% !important;
+	min-height: 500px !important;
+	height: auto !important;
+}
+
+
+#menu {
+	display: none;
+}

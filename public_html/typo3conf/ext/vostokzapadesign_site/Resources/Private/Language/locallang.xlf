@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-11-29T16:44:25Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="banner.image">
+			<source>Banner image</source>
+		</trans-unit>
+		<trans-unit id="banner.isLast">
+			<source>Last banner in line</source>
+		</trans-unit>
+		<trans-unit id="banner.text">
+			<source>Banner text</source>
+		</trans-unit>
+		<trans-unit id="banner.title">
+			<source>Banner title</source>
+		</trans-unit>
+		<trans-unit id="course.image">
+			<source>Course image</source>
+		</trans-unit>
+		<trans-unit id="course.link">
+			<source>Course link</source>
+		</trans-unit>
+		<trans-unit id="course.more">
+			<source>More</source>
+		</trans-unit>
+		<trans-unit id="course.subtitle">
+			<source>Course subtitle</source>
+		</trans-unit>
+		<trans-unit id="course.text">
+			<source>Course text</source>
+		</trans-unit>
+		<trans-unit id="course.title">
+			<source>Course title</source>
+		</trans-unit>
+		<trans-unit id="flux.banner">
+			<source>Banner</source>
+		</trans-unit>
+		<trans-unit id="flux.content_area">
+			<source>Content Area</source>
+		</trans-unit>
+		<trans-unit id="flux.course">
+			<source>Course</source>
+		</trans-unit>
+		<trans-unit id="flux.example">
+			<source>Example element</source>
+		</trans-unit>
+		<trans-unit id="flux.example.description">
+			<source>Small example element</source>
+		</trans-unit>
+		<trans-unit id="flux.example.fields.settings.helloWorld">
+			<source>Example input</source>
+		</trans-unit>
+		<trans-unit id="flux.homepage">
+			<source>Home page</source>
+		</trans-unit>
+		<trans-unit id="flux.innerpage">
+			<source>Inner page</source>
+		</trans-unit>
+		<trans-unit id="flux.left_column">
+			<source>Left Column</source>
+		</trans-unit>
+		<trans-unit id="flux.standard">
+			<source>Example page</source>
+		</trans-unit>
+		<trans-unit id="flux.standard.description">
+			<source>Description can be entered in LLL file locallang.xlf of extension test</source>
+		</trans-unit>
+		<trans-unit id="flux.teacher">
+			<source>Teacher</source>
+		</trans-unit>
+		<trans-unit id="teacher.image">
+			<source>Teacher image</source>
+		</trans-unit>
+		<trans-unit id="teacher.position">
+			<source>Teacher poisition</source>
+		</trans-unit>
+		<trans-unit id="teacher.text">
+			<source>Teacher text</source>
+		</trans-unit>
+		<trans-unit id="teacher.title">
+			<source>Teacher title</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

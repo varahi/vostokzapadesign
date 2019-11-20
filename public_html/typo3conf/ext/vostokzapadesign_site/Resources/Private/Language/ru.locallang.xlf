@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2016-11-29T16:44:25Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="banner.image" approved="yes">
+			<source>Banner image</source>
+			<target>Banner image</target>
+		</trans-unit>
+		<trans-unit id="banner.isLast" approved="yes">
+			<source>Last banner in line</source>
+			<target>Last banner in line</target>
+		</trans-unit>
+		<trans-unit id="banner.text" approved="yes">
+			<source>Banner text</source>
+			<target>Banner text</target>
+		</trans-unit>
+		<trans-unit id="banner.title" approved="yes">
+			<source>Banner title</source>
+			<target>Banner title</target>
+		</trans-unit>
+		<trans-unit id="course.image" approved="yes">
+			<source>Course image</source>
+			<target>Изображение</target>
+		</trans-unit>
+		<trans-unit id="course.link" approved="yes">
+			<source>Course link</source>
+			<target>Ссылка на страницу курса</target>
+		</trans-unit>
+		<trans-unit id="course.more" approved="yes">
+			<source>More</source>
+			<target>Подробнее...</target>
+		</trans-unit>
+		<trans-unit id="course.subtitle" approved="yes">
+			<source>Course subtitle</source>
+			<target>Подзаголовок</target>
+		</trans-unit>
+		<trans-unit id="course.text" approved="yes">
+			<source>Course text</source>
+			<target>Описание</target>
+		</trans-unit>
+		<trans-unit id="course.title" approved="yes">
+			<source>Course title</source>
+			<target>Название курса</target>
+		</trans-unit>
+		<trans-unit id="flux.banner" approved="yes">
+			<source>Banner</source>
+			<target>Баннер</target>
+		</trans-unit>
+		<trans-unit id="flux.content_area" approved="yes">
+			<source>Content Area</source>
+			<target>Content Area</target>
+		</trans-unit>
+		<trans-unit id="flux.course" approved="yes">
+			<source>Course</source>
+			<target>Курс</target>
+		</trans-unit>
+		<trans-unit id="flux.example" approved="yes">
+			<source>Example element</source>
+			<target>Example element</target>
+		</trans-unit>
+		<trans-unit id="flux.example.description" approved="yes">
+			<source>Small example element</source>
+			<target>Small example element</target>
+		</trans-unit>
+		<trans-unit id="flux.example.fields.settings.helloWorld" approved="yes">
+			<source>Example input</source>
+			<target>Example input</target>
+		</trans-unit>
+		<trans-unit id="flux.homepage" approved="yes">
+			<source>Home page</source>
+			<target>Home page</target>
+		</trans-unit>
+		<trans-unit id="flux.innerpage" approved="yes">
+			<source>Inner page</source>
+			<target>Inner page</target>
+		</trans-unit>
+		<trans-unit id="flux.left_column" approved="yes">
+			<source>Left Column</source>
+			<target>Left Column</target>
+		</trans-unit>
+		<trans-unit id="flux.standard" approved="yes">
+			<source>Example page</source>
+			<target>Example page</target>
+		</trans-unit>
+		<trans-unit id="flux.standard.description" approved="yes">
+			<source>Description can be entered in LLL file locallang.xlf of extension test</source>
+			<target>Description can be entered in LLL file locallang.xlf of extension test</target>
+		</trans-unit>
+		<trans-unit id="flux.teacher" approved="yes">
+			<source>Teacher</source>
+			<target>Преподаватель</target>
+		</trans-unit>
+		<trans-unit id="teacher.image" approved="yes">
+			<source>Teacher image</source>
+			<target>Изображение</target>
+		</trans-unit>
+		<trans-unit id="teacher.position" approved="yes">
+			<source>Teacher poisition</source>
+			<target>Должность</target>
+		</trans-unit>
+		<trans-unit id="teacher.text" approved="yes">
+			<source>Teacher text</source>
+			<target>Описание</target>
+		</trans-unit>
+		<trans-unit id="teacher.title" approved="yes">
+			<source>Teacher title</source>
+			<target>Заголовое</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: 'FreeSetCyrillic';
+  src: url('FreeSetCyrillic.eot?#iefix') format('embedded-opentype'),  url('FreeSetCyrillic.woff') format('woff'), url('FreeSetCyrillic.ttf')  format('truetype'), url('FreeSetCyrillic.svg#FreeSetCyrillic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreeSetBoldCyrillic';
+  src: url('FreeSetBoldCyrillic.eot?#iefix') format('embedded-opentype'),  url('FreeSetBoldCyrillic.woff') format('woff'), url('FreeSetBoldCyrillic.ttf')  format('truetype'), url('FreeSetBoldCyrillic.svg#FreeSetBoldCyrillic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

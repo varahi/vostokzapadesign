@@ -1,0 +1,66 @@
+page {
+	footer {
+		footerCopyright = &copy; 2008-2019 ООО «Восток—Запад». Все права защищены.
+		footerMenu = 13, 62, 42, 222, 171, 9
+		developerInfo = Разработка сайта — <a href="http://www.adwz.ru/" rel="nofollow" target="_blank">Adwizard</a>
+		mapLink = 26
+		mapTitle = Схема проезда
+		phone = +7 (495) 641-83-51
+	}
+}
+
+
+plugin.tx_vostokzapadesignsite.view {
+	templateRootPaths.0 = EXT:vostokzapadesign_site/Resources/Private/Templates/
+	partialRootPaths.0 = EXT:vostokzapadesign_site/Resources/Private/Partials/
+	layoutRootPaths.0 = EXT:vostokzapadesign_site/Resources/Private/Layouts/
+}
+
+template_path = typo3conf/ext/vostokzapadesign_site
+
+# root page id
+const.rootPageID = 1
+# base URL
+const.baseURL = {$domain}
+
+<INCLUDE_TYPOSCRIPT: source="FILE: typo3conf/ext/vostokzapadesign_site/Configuration/TypoScript/system/constants.ts">
+
+styles.content.imgtext.linkWrap {
+  lightboxEnabled = 1
+  lightboxRelAttribute = magnificpopup{field:uid}
+  lightboxCssClass = magnificpopup
+}
+
+
+styles.content.imgtext.maxW = 500
+styles.content.imgtext.maxWInText = 500
+styles.content.imgtext.linkWrap.width = 800
+styles.content.loginform.pid = 0
+
+# Magnific popup
+plugin.tx_jhmagnificpopup.type.ajax.ajax.cursor = 0
+plugin.tx_jhmagnificpopup.type.ajax.closeOnBgClick = 0
+plugin.tx_jhmagnificpopup.type.ajax.closeBtnInside = 1
+plugin.tx_jhmagnificpopup.type.ajax.disableOn = 1
+plugin.tx_jhmagnificpopup.type.ajax.showCloseBtn = 1
+plugin.tx_jhmagnificpopup.type.ajax.alignTop = 1
+plugin.tx_jhmagnificpopup.type.ajax.modal = 0
+
+# Powermail
+#plugin.tx_powermail.settings.misc.debugSettings = 1
+#plugin.tx_powermail.settings.misc.debugVariables = 1
+#plugin.tx_powermail.settings.misc.debugMail = 1
+#plugin.tx_powermail.settings.misc.debugSaveToTable = 1
+#plugin.tx_powermail.settings.misc.debugSpamshield = 1
+
+plugin.tx_powermail.view.templateRootPath = typo3conf/ext/vostokzapadesign_site/Resources/Private/Templates/Extensions/powermail/Templates/
+plugin.tx_powermail.view.partialRootPath = typo3conf/ext/vostokzapadesign_site/Resources/Private/Templates/Extensions/powermail/Partials/
+plugin.tx_powermail.view.layoutRootPath = typo3conf/ext/vostokzapadesign_site/Resources/Private/Templates/Extensions/powermail/Layouts/
+
+plugin.tx_powermail.settings.main.pid = 309
+plugin.tx_powermail.settings.main.confirmation = 0
+plugin.tx_powermail.settings.main.optin = 0
+plugin.tx_powermail.settings.main.moresteps = 0
+#plugin.tx_powermail.settings.receiver.default.senderEmail = Webmail user
+#plugin.tx_powermail.settings.receiver.overwrite.senderEmail = 
+plugin.tx_powermail.settings.misc.ajaxSubmit = 1
