@@ -1,21 +1,10 @@
 
 <script type="text/javascript">
-    <f:alias map="{ang: {s: '{{', e: '}}'}}">
-    var sliders = {ang.s}
-    {uid}: {ang.s}slider : '#slider_{uid}', nav: '#slider_nav_{uid}'{ang.e},
-    {ang.s};
-    </f:alias>
-</script>
-
-
-<script type="text/javascript">
-    <f:for each="{0:1, 1:2, 2:3, 3:4}" as="foo" iteration="iterator">
-        <f:if condition="{iterator.index} < {countUids}">
-        <f:alias map="{ang: {s: '{{', e: '}}'}}">
-    var sliders = {ang.s}
-    {uid}: {ang.s}slider : '#slider_{uid}', nav: '#slider_nav_{uid}'{ang.e},
-    {ang.s};
-    </f:alias>
-    </f:if>
+    var sliders = {
+    <f:for each="{countUids}" as="countUid" iteration="itemIteration">
+        <f:alias map="{ang: {s: '{', e: '}'}}">
+            {countUid}: {ang.s}slider : '#slider_{countUid}', nav: '#slider_nav_{countUid}'{ang.e},
+        </f:alias>
     </f:for>
+    };
 </script>

@@ -1,0 +1,77 @@
+
+plugin.tx_t3devcarousel_t3devcarousel {
+	view {
+		templateRootPaths.0 = {$plugin.tx_t3devcarousel_t3devcarousel.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_t3devcarousel_t3devcarousel.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_t3devcarousel_t3devcarousel.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_t3devcarousel_t3devcarousel.persistence.storagePid}
+	}
+}
+
+plugin.tx_t3devcarousel._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-t3devcarousel table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-t3devcarousel table th {
+		font-weight:bold;
+	}
+
+	.tx-t3devcarousel table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
+
+page.includeCSS {
+  css_10_tx_t3devcarousel = EXT:t3devcarousel/Resources/Public/Css/slick.css
+  css_11_tx_t3devcarousel = EXT:t3devcarousel/Resources/Public/Css/slick-theme.css
+}
+
+page.includeJSFooter {
+  #js_10_tx_t3devcarousel = EXT:t3devcarousel/Resources/Public/Javascript/slick.js
+	10_slick_js = EXT:t3devcarousel/Resources/Public/Javascript/slick.min.js
+	10_custom_js = EXT:t3devcarousel/Resources/Public/Javascript/custom.js
+}
+
+/*
+lib.carouselUids = USER
+lib.carouselUids {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = T3devcarousel
+    pluginName = T3devcarousel
+    vendorName = T3Dev
+
+    switchableControllerActions {
+        Item {
+            1 = list
+        }
+    }
+
+    settings < plugin.tx_t3devcarousel_t3devcarousel
+    settings {
+        //categories = 49
+    }
+}
+*/

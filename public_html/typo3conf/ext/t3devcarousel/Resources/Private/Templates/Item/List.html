@@ -1,0 +1,38 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<f:layout name="Default" />
+<f:section name="main">
+
+<div class="row">
+	<div class="large-7 medium-8 columns">
+  
+	<!-- MAIN SLIDES -->
+	<div class="slider" id="slider_{uid}">
+		<f:for each="{items}" as="item">
+			<f:for each="{item.image}" as="image"> 
+				<a class="magnificpopup" title="{image.originalResource.title}" href="{image.originalResource.publicUrl}">
+					<figure>
+						<f:image src="{image.originalResource.originalFile.uid}" alt="{image.originalResource.title}" 
+						width="640c" height="480c-50" />	
+					</figure>
+				</a>	
+			</f:for>
+		</f:for>
+	</div>
+			
+	<!-- THUMBNAILS -->
+	<div class="slider-nav-thumbnails" id="slider_nav_{uid}">
+		<f:for each="{items}" as="item">
+			<f:for each="{item.image}" as="image">
+				<div>
+					<f:image src="{image.originalResource.originalFile.uid}" alt="{image.originalResource.title}" 
+					width="640c" height="480c" />					
+				</div>
+			</f:for>
+		</f:for>
+	</div>
+      
+	</div>
+</div>
+	<f:render partial="JavaScript" arguments="{_all}" />
+</f:section>

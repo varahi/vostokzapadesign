@@ -1,0 +1,15 @@
+
+config.tx_extbase{
+    persistence{
+        classes{
+
+            T3Dev\T3devcarousel\Domain\Model\Slider {
+                mapping {
+                    tableName = tt_content
+                    recordType = Tx_T3devcarousel_Slider
+                }
+            }
+            
+    	}
+    }
+}
