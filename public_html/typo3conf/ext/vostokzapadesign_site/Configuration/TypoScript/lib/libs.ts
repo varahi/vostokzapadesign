@@ -304,31 +304,30 @@ lib.copyright {
 
 lib.content.right = COA
 lib.content.right {
-# 5 = LOAD_REGISTER
-# 5.defaultHeaderType = graphic_header_pi1
+// 5 = LOAD_REGISTER
+// 5.defaultHeaderType = graphic_header_pi1
 
   10= RECORDS
   10.source.current=1
   10.tables = tt_content
   10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
   
-  100 = TEXT
-  100.value = <a href="javascript:window.print();">Версия для печати</a>
-  100.wrap = <p class="align-right">|</p>
+  //100 = TEXT
+  //100.value = <a href="javascript:window.print();">Версия для печати</a>
+  //100.wrap = <p class="align-right">|</p>
   
   200 < lib.counter
 
 # 999 = RESTORE_REGISTER
 }
 
-#PIDinRootline = 62,42,222,9
+//PIDinRootline = 62,42,222,9
 lib.content.right.20 = CONTENT 
 lib.content.right.20 {
   table = tt_content
   select.pidInList = 223
   select.uidInList = 1058
 }
-#global
 
 [PIDupinRootline = 62,42,222,9]
 lib.content.right.20 {
@@ -337,7 +336,7 @@ lib.content.right.20 {
 }
 [global]
 
-#lib.content.right >
+//lib.content.right >
 
 
 
