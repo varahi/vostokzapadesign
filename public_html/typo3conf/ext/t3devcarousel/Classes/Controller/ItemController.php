@@ -47,9 +47,8 @@ class ItemController extends AbstractController
      */
     public function listAction()
     {
-        //$items = $this->itemRepository->findAll();
-        //$this->view->assign('items', $items);
 
+        // Get content object
         $cObj = $this->configurationManager->getContentObject();
         $data = $cObj->data;
         $uidTtContent = $data['uid'];
@@ -58,15 +57,10 @@ class ItemController extends AbstractController
         $this->view->assign('cObjs', $cObj);
         $this->view->assign('uid', $uidTtContent);
 
+        // Get uids of inserted plugins
         $currentPid = $GLOBALS['TSFE']->id;
-        //$uids = $this->findUidsByPid($currentPid);
         $countUids = $this->findUidsByPid($currentPid);
         $this->view->assign('countUids', $countUids);
-        //$maxUids = ['999'];
-        //$cObj = $this->configurationManager->getContentObject();
-        //$currentUid[] = $cObj->data['uid'];
-       // \TYPO3\CMS\Core\Utility\DebugUtility::debug($cObj);
-
 
     }
 
