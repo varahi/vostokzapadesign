@@ -12,8 +12,10 @@
 			<f:for each="{item.image}" as="image"> 
 				<a class="magnificpopup" title="{image.originalResource.title}" href="{image.originalResource.publicUrl}">
 					<figure>
-						<f:image src="{image.originalResource.originalFile.uid}" alt="{image.originalResource.title}" 
-						width="640c" height="480c-50" />	
+						<!-- <f:image src="{image.originalResource.originalFile.uid}" alt="{image.originalResource.title}"
+						width="640c" height="480c-50" /> -->
+						<f:image src="{image.originalResource.originalFile.uid}" alt="{image.originalResource.title}"
+								 maxWidth="640" maxHeight="480" />
 					</figure>
 				</a>	
 			</f:for>

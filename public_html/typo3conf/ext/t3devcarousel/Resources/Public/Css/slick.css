@@ -78,8 +78,13 @@
 {
     float: right;
 }
-.slick-slide img
-{
+
+.slider .slick-slide img {
+    width: auto !important;
+    height: auto !important;
+    max-height: 380px;
+}
+.slick-slide img  {
     display: block;
 }
 .slick-slide.slick-loading img
