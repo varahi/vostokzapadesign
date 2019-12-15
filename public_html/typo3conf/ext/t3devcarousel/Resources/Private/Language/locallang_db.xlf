@@ -18,6 +18,9 @@
 			<trans-unit id="tx_t3devcarousel_domain_model_item.title">
 				<source>Title</source>
 			</trans-unit>
+			<trans-unit id="tx_t3devcarousel_domain_model_item.no_crop_images">
+				<source>No crop images</source>
+			</trans-unit>
 			<trans-unit id="tx_t3devcarousel_domain_model_item.caption">
 				<source>Caption</source>
 			</trans-unit>

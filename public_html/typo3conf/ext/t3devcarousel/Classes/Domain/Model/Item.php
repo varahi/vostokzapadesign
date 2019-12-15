@@ -38,6 +38,13 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      */
     protected $title = '';
+
+    /**
+     * cropImages
+     *
+     * @var int
+     */
+    protected $noCrop = 0;
     
     /**
      * caption
@@ -149,8 +156,6 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         $this->link = $link;
     }
     
-
-    
     /**
      * Adds a FileReference
      *
@@ -188,6 +193,27 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      */
     public function setImage(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $image) {
     	$this->image = $image;
-    }    
+    }
+
+    /**
+     * Sets the noCrop
+     *
+     * @param int $noCrop
+     * @return void
+     */
+    public function setNoCrop($noCrop)
+    {
+        $this->noCrop = $noCrop;
+    }
+
+    /**
+     * Returns the noCrop
+     *
+     * @return int $noCrop
+     */
+    public function getNoCrop()
+    {
+        return $this->noCrop;
+    }
 
 }

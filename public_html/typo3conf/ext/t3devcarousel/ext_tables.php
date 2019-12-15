@@ -14,7 +14,6 @@ if (!defined('TYPO3_MODE')) {
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_t3devcarousel_domain_model_item', 'EXT:t3devcarousel/Resources/Private/Language/locallang_csh_tx_t3devcarousel_domain_model_item.xlf');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3devcarousel_domain_model_item');
 
-
 $tmp_t3devcarousel_columns = array(
 
 		'tx_t3devcarousel_item' => array(

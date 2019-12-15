@@ -4,6 +4,7 @@
 CREATE TABLE tt_content (
 
 	tx_t3devcarousel_item int(11) unsigned DEFAULT '0' NOT NULL,
+#    tx_t3devcarousel_crop_images int(11) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -18,6 +19,7 @@ CREATE TABLE tx_t3devcarousel_domain_model_item (
 	slider int(11) unsigned DEFAULT '0' NOT NULL,
 
 	title varchar(255) DEFAULT '' NOT NULL,
+    no_crop int(11) unsigned DEFAULT '0' NOT NULL,
 	caption text NOT NULL,
 	link varchar(255) DEFAULT '' NOT NULL,
 	image int(11) unsigned NOT NULL default '0',

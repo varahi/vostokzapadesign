@@ -24,10 +24,10 @@ return array(
 		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('t3devcarousel') . 'Resources/Public/Icons/tx_t3devcarousel_domain_model_item.gif'
 	),
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, image',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, no_crop, image',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, image, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, no_crop, image, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -126,6 +126,16 @@ return array(
 				'eval' => 'trim'
 			),
 		),
+        'no_crop' => array(
+            'label' => 'LLL:EXT:t3devcarousel/Resources/Private/Language/locallang_db.xlf:tx_t3devcarousel_domain_model_item.no_crop_images',
+            'exclude' => 1,
+            'config' => array (
+                'type' => 'check',
+                'items' => array(
+                    array('', '')
+                )
+            )
+        ),
 		'caption' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:t3devcarousel/Resources/Private/Language/locallang_db.xlf:tx_t3devcarousel_domain_model_item.caption',
