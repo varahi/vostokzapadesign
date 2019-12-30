@@ -392,6 +392,8 @@ lib.seminarTitle {
     <option value="10">10</option>    
    )
   }
+
+  30 >
 }
 
 lib.sTitle >

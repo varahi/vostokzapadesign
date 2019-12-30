@@ -83,6 +83,8 @@ lib.mMenu  {
     </a>    
   )
   20 = HMENU
+  20.special = directory
+  20.special.value = {$page.additionalMobileMenu}
   20 {
   wrap = <nav id="menu">|</nav>
    1 = TMENU
@@ -99,7 +101,6 @@ lib.mMenu  {
    3.wrap = <ul>|</ul>   
   }
 }
-
 
 # lib.navigation.submenu
 lib.navigation.submenu = HMENU

@@ -7,6 +7,7 @@ page {
 		mapTitle = Схема проезда
 		phone = +7 (495) 641-83-51
 	}
+	additionalMobileMenu = 1,400
 }
 
 
