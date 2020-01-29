@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT type="array">
+        <type>array</type>
+        <el type="array">
+            <additional_class>
+                <TCEforms type="array">
+                    <label>LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelements.flexform.additional_class</label>
+                    <config type="array">
+                        <type>select</type>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelements.flexform.no_class</numIndex>
+                                <numIndex index="1"></numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="array">
+                                <numIndex index="0">LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelements.flexform.media_items_class</numIndex>
+                                <numIndex index="1">media-items</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </additional_class>
+        </el>
+    </ROOT>
+</T3DataStructure>

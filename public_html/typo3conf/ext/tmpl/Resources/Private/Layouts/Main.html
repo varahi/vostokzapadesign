@@ -1,0 +1,35 @@
+<f:render partial="Header/HeaderMain" arguments="{_all}" />
+
+<main class="main" id="main">
+    <section class="section section-about visible current">
+        <f:render section="section_about" />
+    </section>
+
+    <section class="section section-stock">
+        <div class="container stock-container">
+            <f:render section="section_stock" />
+        </div>
+    </section>
+
+    <section class="section section-oil">
+        <div class="container oil-container">
+            <f:render section="section_oil" />
+        </div>
+    </section>
+
+    <f:if condition="{data.show_section_search_dealer} == 1">
+        <section class="section-map">
+            <div class="container map-container">
+                <f:render section="section_map" />
+            </div>
+        </section>
+    </f:if>
+
+    <f:if condition="{data.show_section_map} == 1">
+        <section class="section-map no-bg">
+             <f:render section="section_map_no_bg" />
+        </section>
+    </f:if>
+</main>
+
+<f:render partial="Footer/FooterMain" arguments="{_all}" />

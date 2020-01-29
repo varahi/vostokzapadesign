@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2018-10-22T10:13:47Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="section_about" approved="yes">
+				<source><![CDATA[Section about]]></source>
+				<target><![CDATA[1-я секция "О Нас" ]]></target>
+			</trans-unit>
+			<trans-unit id="section_map" approved="yes">
+				<source><![CDATA[Section map]]></source>
+				<target><![CDATA[4-я секция "Поиск по дилерам" ]]></target>
+			</trans-unit>
+			<trans-unit id="section_map_no_bg" approved="yes">
+				<source><![CDATA[Section map no bg]]></source>
+				<target><![CDATA[5-я секция "Карта" ]]></target>
+			</trans-unit>
+			<trans-unit id="section_oil" approved="yes">
+				<source><![CDATA[Section oil]]></source>
+				<target><![CDATA[3-я секция "Каталог" ]]></target>
+			</trans-unit>
+			<trans-unit id="section_stock" approved="yes">
+				<source><![CDATA[Section stock]]></source>
+				<target><![CDATA[2-я секция "Новости" ]]></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

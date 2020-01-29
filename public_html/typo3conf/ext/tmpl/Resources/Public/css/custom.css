@@ -1,0 +1,95 @@
+/* Main */
+.media-body {
+    background-size: auto 110vh;
+}
+
+/* News detail */
+.detail-news-img {
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Search */
+span.hit {
+    background: #e7c547;
+}
+.search__result-image {
+    min-width: auto;
+}
+
+/* Catalog */
+.modal-products.active {
+    z-index: 99;
+}
+.card__link {
+    background: none;
+}
+
+/* Images for attached files in catalog */
+.pdf {
+    background: url('../img/link-icon.png') no-repeat right center;
+}
+
+/* Table for catalog */
+.card-table table tr:first-child  {
+    line-height:  70px;
+}
+.card-table table tr {
+    color: #444649;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.card-table table tr td {
+    width: auto;
+    padding: 0 20px;
+}
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container {
+	direction: unset;
+}
+
+.catalog-filter {
+    width: 470px;
+}
+
+
+.autocomplete-suggestions {
+  overflow: auto;
+}
+.autocomplete-suggestion.autocomplete-selected {
+  background-color: #ccc;
+}
+
+
+/* Pagination */
+.page-navigation {
+    width: 100%;
+    margin-top: 20px;
+}
+.page-navigation p {
+    display: none;
+}
+ul.f3-widget-paginator {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+ul.f3-widget-paginator li {
+    display: inline-block;
+}
+ul.f3-widget-paginator li,
+ul.f3-widget-paginator li a {
+    color: #002850;
+    font-family: Arial;
+    font-size: 14px;
+}
+ul.f3-widget-paginator li a {
+    text-decoration: underline;
+}
+ul.f3-widget-paginator li a:hover {
+    text-decoration: none;
+}

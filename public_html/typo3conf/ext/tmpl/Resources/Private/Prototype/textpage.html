@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/onepage-scroll.css">
+  <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./libs/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="media-body">
+  <header class="header dark media-header">
+    <div>
+      <a href="#" class="logo">
+        <img src="./img/logo.svg" alt="logoimg">
+      </a>
+    </div>
+    <div>
+      <nav class='nav'>
+        <ul class="nav-ul">
+          <li><a href="#">моторные масла</a></li>
+          <li><a href="#">продукты для автомобиля</a></li>
+          <li><a href="#">О бренде</a></li>
+          <li><a href="#">Как купить</a></li>
+        </ul>
+        <div class="md-hidden">
+          <img src="./img/icon.png" alt="icon">
+        </div>
+        <div class="header-menu__button-active js-open-menu">
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main padding">
+    <section class="section section-media current">
+      <div class="container textpage-container">
+        <h2 class="h2-line text-page__h2">Текстовая страница типа новости или просто информационная</h2>
+        <div class="textpage-content">
+          <div class="textpage__imgs">
+            <div class="col col-1">
+                <img src="./img/textpageimg1.png" alt="image">
+            </div>
+
+            <div class="col col-2 xs-hidden js-textpage__imgs">
+              <div class="row row-1">
+                  <img class="show" src="./img/textpageimg2.png" alt="image">
+              </div>
+              <div class="row row-2">
+                  <img class="show" src="./img/textpage3.png" alt="image">
+              </div>
+            </div>
+
+            <!--<div class="gallery-btn js-gallery-btn">-->
+              <a href="./img/textpageimg1.png" class="gallery-btn" data-fancybox="images">
+                <span class="gallery-icon">Галарея</span>
+              </a>
+
+            <!--</div>-->
+            <!-- Gallery -->
+            <div style="display:none;" class="more-photo">
+              <!--<a href="./img/textpageimg1.png" data-fancybox="images" data-type="image">-->
+                <!--<img src="./img/textpageimg1.png" alt="image">-->
+              <!--</a>-->
+              <a href="./img/textpageimg2.png" data-fancybox="images" data-type="image">
+                <img class="show" src="./img/textpageimg2.png" alt="image">
+              </a>
+              <a href="./img/textpage3.png" data-fancybox="images" data-type="image">
+                <img class="show" src="./img/textpage3.png" alt="image">
+              </a>
+              <a href="./img/stock1.png" data-fancybox="images" data-type="image">
+                <img class="show" src="./img/stock1.png" alt="image">
+              </a>
+            </div>
+          </div>
+          <div class="textpage__text-containter">
+            <h3>Подзаголовок</h3>
+            <div class="textpage__text">
+              <p>Перечисленные ценности оказывают важнейшее влияние на повседневную деятельность
+                концерна, а также служат основой его сегодняшнего положения на рынке и долгосрочной
+                конкурентоспособности. Они подкрепляются принципами и правилами, зафиксированными в
+                Кодексе Бизнес-этики.<br>
+                Доверительные отношения между компанией и ее сотрудниками – наш самый главный актив.
+                Компания FUCHS  ожидает от всех своих сотрудников в рамках их профессиональной деятельности
+                соблюдения законодательных актов и правил внутреннего распорядка, а также приверженности основным
+                ценностям.
+              </p>
+              <p>
+                Если у вас появились конкретные сведения или подозрения в том,
+                что определенные действия или ситуации, происходящие в компании FUCHS,
+                нарушают принципы Кодекса Бизнес-этики, Правил внутреннего распорядка или прочих
+                законодательных актов, просим вас незамедлительно сообщить нам об этом, посредством
+                обращения к ответственному за контроль по соблюдению Бизнес-этики – Вахромкиной Ольге:
+                По телефону +7 (495) 961 27 41;
+              </p>
+              <p>
+                Заранее благодарим вас за оказанную помощь и добросовестное отношение!
+                С уважением,
+                ООО «ФУКС ОЙЛ»
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer media-footer">
+    <div class="footer-social">
+      <div><a class='social__item social-fb' href="#"></a></div>
+      <div><a class='social__item social-vk' href="#"></a></div>
+      <div><a class='social__item social-yt' href="#"></a></div>
+    </div>
+    <div class="footer__worldwide">© Fuchs oil worldwide. 2018</div>
+    <a href="#" class="footer__link">Кропотливо создано компанией - "Простые технологии"</a>
+  </footer>
+  <div class="preloader">
+    <img src="./img/loader_fuchs.gif" alt="preloader">
+  </div>
+  <script src="./libs/jquery-3.2.1.min.js"></script>
+  <script src="./libs/jquery.onepage-scroll.js"></script>
+  <script src="./libs/jquery.fancybox.min.js"></script>
+  <script src="./libs/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

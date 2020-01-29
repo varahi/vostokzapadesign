@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-10-22T10:13:47Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="section_about">
+				<source><![CDATA[Section about]]></source>
+			</trans-unit>
+			<trans-unit id="section_map">
+				<source><![CDATA[Section map]]></source>
+			</trans-unit>
+			<trans-unit id="section_map_no_bg">
+				<source><![CDATA[Section map no bg]]></source>
+			</trans-unit>
+			<trans-unit id="section_oil">
+				<source><![CDATA[Section oil]]></source>
+			</trans-unit>
+			<trans-unit id="section_stock">
+				<source><![CDATA[Section stock]]></source>
+			</trans-unit>
+			<trans-unit id="title">
+				<source><![CDATA[Main Page]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

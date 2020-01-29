@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT type="array">
+        <type>array</type>
+        <el type="array">
+            <hide_image_area>
+                <TCEforms type="array">
+                    <label>LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelements.hide_image_area</label>
+                    <config>
+                        <type>check</type>
+                    </config>
+                </TCEforms>
+            </hide_image_area>
+        </el>
+    </ROOT>
+</T3DataStructure>

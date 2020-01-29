@@ -1,0 +1,15 @@
+<footer class="footer">
+    <ul class="slider-nav"></ul>
+    <f:cObject typoscriptObjectPath="lib.footerSocial" />
+    <f:cObject typoscriptObjectPath="lib.copyright" />
+</footer>
+
+<f:cObject typoscriptObjectPath="lib.preloader" />
+
+<f:if condition="{data.show_modal_categories} == 1">
+    <f:cObject typoscriptObjectPath="lib.subCategoryList" />
+</f:if>
+
+<f:if condition="{data.show_dealers} == 1">
+    <f:cObject typoscriptObjectPath="lib.dealers" />
+</f:if>

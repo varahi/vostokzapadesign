@@ -1,0 +1,19 @@
+<div class="textpage-content">
+<f:if condition="{data.flexform_hide_image_area} == 1">
+    <f:then>
+        <div class="textpage__text-containter">
+            <div class="textpage__text">
+            {data.tx_gridelements_view_columns.1->f:format.raw()}
+            </div>
+        </div>
+    </f:then>
+    <f:else>
+            {data.tx_gridelements_view_columns.0->f:format.raw()}
+        <div class="textpage__text-containter">
+            <div class="textpage__text">
+                {data.tx_gridelements_view_columns.1->f:format.raw()}
+            </div>
+        </div>
+    </f:else>
+</f:if>
+</div>

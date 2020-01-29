@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-10-23T12:23:27Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="content">
+				<source><![CDATA[Content area]]></source>
+			</trans-unit>
+			<trans-unit id="title">
+				<source><![CDATA[Standard Page]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

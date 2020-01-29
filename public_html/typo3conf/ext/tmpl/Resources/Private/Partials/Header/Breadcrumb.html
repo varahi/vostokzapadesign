@@ -1,0 +1,8 @@
+<f:if condition="{data.hide_breadcrumb} == 1">
+    <f:then></f:then>
+    <f:else>
+        <div class="breadcrumbs">
+            <f:cObject typoscriptObjectPath="lib.breadcrumb" />
+        </div>
+    </f:else>
+</f:if>

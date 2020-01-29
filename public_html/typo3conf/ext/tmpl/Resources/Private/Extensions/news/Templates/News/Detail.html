@@ -1,0 +1,51 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  xmlns:rx="http://typo3.org/ns/Reelworx/RxShariff/ViewHelper"
+	  data-namespace-typo3-fluid="true">
+<f:layout name="Detail" />
+
+<f:section name="content">
+	<f:if condition="{newsItem}">
+
+		<!-- Meta tags here -->
+		<n:format.nothing>
+			<n:excludeDisplayedNews newsItem="{newsItem}" />
+			<f:if condition="{newsItem.alternativeTitle}">
+				<f:then>
+					<n:titleTag>
+						<f:format.htmlentitiesDecode>{newsItem.alternativeTitle}</f:format.htmlentitiesDecode>
+					</n:titleTag>
+				</f:then>
+				<f:else>
+					<n:titleTag>
+						<f:format.htmlentitiesDecode>{newsItem.title}</f:format.htmlentitiesDecode>
+					</n:titleTag>
+				</f:else>
+			</f:if>
+			<f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}" />
+		</n:format.nothing>
+
+		<h1 class="h2-line text-page__h2" itemprop="headline">{newsItem.title}</h2>
+	    <div class="textpage-content" itemprop="description">
+
+			<f:if condition="{newsItem.contentElements}">
+				<f:then>
+					<!-- content elements -->
+					<div class="textpage__text-containter">
+						<f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>
+					</div>
+				</f:then>
+				<f:else>
+					<f:render partial="Detail/GalleryContainer" arguments="{media: newsItem.media, settings:settings}" />
+					<div class="textpage__text-containter">
+						<div class="textpage__text">
+							<f:format.html>{newsItem.bodytext}</f:format.html>
+						</div>
+					</div>
+				</f:else>
+			</f:if>
+		</div>
+
+	</f:if>
+</f:section>	
+</html>

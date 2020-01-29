@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-11-02T09:00:13Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="ce.about_section.video_link">
+				<source><![CDATA[Video Link]]></source>
+			</trans-unit>
+			<trans-unit id="ce.about_section_bodytext">
+				<source><![CDATA[Image]]></source>
+			</trans-unit>
+			<trans-unit id="ce.about_section_description">
+				<source><![CDATA[Section about with video and text]]></source>
+			</trans-unit>
+			<trans-unit id="ce.about_section_div">
+				<source><![CDATA[About Section Data]]></source>
+			</trans-unit>
+			<trans-unit id="ce.about_section_image">
+				<source><![CDATA[Image]]></source>
+			</trans-unit>
+			<trans-unit id="ce.about_section_title">
+				<source><![CDATA[Section about]]></source>
+			</trans-unit>
+			<trans-unit id="ce.layout_textpage_text">
+				<source><![CDATA[Wrapper for text "textpage__text"]]></source>
+			</trans-unit>
+			<trans-unit id="ce.top_container_bodytext">
+				<source><![CDATA[Bodytext]]></source>
+			</trans-unit>
+			<trans-unit id="ce.top_container_description">
+				<source><![CDATA[Container with pre-selected classes]]></source>
+			</trans-unit>
+			<trans-unit id="ce.top_container_header">
+				<source><![CDATA[Header]]></source>
+			</trans-unit>
+			<trans-unit id="ce.top_container_title">
+				<source><![CDATA[Container with title and text]]></source>
+			</trans-unit>
+			<trans-unit id="ce.top_container_type">
+				<source><![CDATA[Container type]]></source>
+			</trans-unit>
+			<trans-unit id="ce.top_container_type_map">
+				<source><![CDATA[Map container]]></source>
+			</trans-unit>
+			<trans-unit id="ce.top_container_type_oil">
+				<source><![CDATA[Oil container]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.content">
+				<source><![CDATA[Content]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.flexform.additional_class">
+				<source><![CDATA[Additional Class]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.flexform.no_class">
+				<source><![CDATA[No Class]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.flexform.oil_class">
+				<source><![CDATA[Class "oil-container"]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.flexform.media_items_class">
+				<source><![CDATA[Class "media-items"]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.grid.news_container">
+				<source><![CDATA[News container]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.grid.news_container_description">
+				<source><![CDATA[Container for top news within other news]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.grid.search_container">
+				<source><![CDATA[Search container]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.grid.search_container_description">
+				<source><![CDATA[Search container]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.grid.standard_container">
+				<source><![CDATA[Standard container]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.grid.standard_container_description">
+				<source><![CDATA[Standard Container with additional classes]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.grid.text_and_image">
+				<source><![CDATA[Grid element text with images]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.header">
+				<source><![CDATA[Header]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.hide_image_area">
+				<source><![CDATA[Hide image area]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.image_area">
+				<source><![CDATA[Image Area]]></source>
+			</trans-unit>
+			<trans-unit id="gridelements.text_area">
+				<source><![CDATA[Text Area]]></source>
+			</trans-unit>
+			<trans-unit id="header.h1_line">
+				<source><![CDATA[h1 with class h1-line text-page__h1]]></source>
+			</trans-unit>
+			<trans-unit id="header.h2_line">
+				<source><![CDATA[h2 with h2-line]]></source>
+			</trans-unit>
+			<trans-unit id="header.h2_line_text_page">
+				<source><![CDATA[h2 with h2-line text-page__h2]]></source>
+			</trans-unit>
+			<trans-unit id="news.in_action">
+				<source><![CDATA[This news in action]]></source>
+			</trans-unit>
+			<trans-unit id="news.layout.listnews">
+				<source><![CDATA[List news]]></source>
+			</trans-unit>
+			<trans-unit id="news.layout.standard_news">
+				<source><![CDATA[Standard news, using with top news]]></source>
+			</trans-unit>
+			<trans-unit id="news.layout.standard_news_main_page">
+				<source><![CDATA[Standard news, on main page]]></source>
+			</trans-unit>
+			<trans-unit id="news.layout.top_news">
+				<source><![CDATA[Top news]]></source>
+			</trans-unit>
+			<trans-unit id="news.layout.top_news_main_page">
+				<source><![CDATA[Top news on main page]]></source>
+			</trans-unit>
+			<trans-unit id="page.container_class">
+				<source><![CDATA[Class for content area container]]></source>
+			</trans-unit>
+			<trans-unit id="page.hide_breadcrumb">
+				<source><![CDATA[Hide breadcrumb]]></source>
+			</trans-unit>
+			<trans-unit id="page.hide_container">
+				<source><![CDATA[Hide container]]></source>
+			</trans-unit>
+			<trans-unit id="page.section_class">
+				<source><![CDATA[Class for section]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.container_card_container">
+				<source><![CDATA[Class "container card-container"]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.container_mapcontainer">
+				<source><![CDATA[Class "container map-container"]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.container_mediacontainer">
+				<source><![CDATA[Class "container media-container"]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.container_mediacontainer_company">
+				<source><![CDATA[Class "container media-container company"]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.container_oil_container">
+				<source><![CDATA[Class "container oil-container"]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.container_textpage">
+				<source><![CDATA[Class "container textpage-container"]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.no_class">
+				<source><![CDATA[No class]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.section_card">
+				<source><![CDATA[Class "section section-card current"]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.section_map">
+				<source><![CDATA[Class "section-map no-bg"]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.section_map_single">
+				<source><![CDATA[Class "section-map-single"]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.section_media">
+				<source><![CDATA[Class "section-media current"]]></source>
+			</trans-unit>
+			<trans-unit id="page.select.section_oil">
+				<source><![CDATA[Class "section section-oil"]]></source>
+			</trans-unit>
+			<trans-unit id="page.show_dealers">
+				<source><![CDATA[Show dealers map]]></source>
+			</trans-unit>
+			<trans-unit id="page.show_modal_categories">
+				<source><![CDATA[Modal catalog categories on page]]></source>
+			</trans-unit>
+			<trans-unit id="page.show_section_map">
+				<source><![CDATA[Show section with map]]></source>
+			</trans-unit>
+			<trans-unit id="page.show_section_search_dealer">
+				<source><![CDATA[Show section with search form for dealers]]></source>
+			</trans-unit>
+			<trans-unit id="simple_gallery_description">
+				<source><![CDATA[Simple gallery with fancyox]]></source>
+			</trans-unit>
+			<trans-unit id="simple_gallery_image">
+				<source><![CDATA[Image for gallery]]></source>
+			</trans-unit>
+			<trans-unit id="simple_gallery_title">
+				<source><![CDATA[Simple gallery]]></source>
+			</trans-unit>
+			<trans-unit id="tca.tab.galleryElements">
+				<source><![CDATA[Gallery Elements]]></source>
+			</trans-unit>
+			<trans-unit id="tx_tmpl_tmpl.description">
+				<source><![CDATA[]]></source>
+			</trans-unit>
+			<trans-unit id="tx_tmpl_tmpl.name">
+				<source><![CDATA[Site Template]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

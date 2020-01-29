@@ -1,0 +1,20 @@
+plugin.tx_news {
+    persistence {
+        classes {
+            GeorgRinger\News\Domain\Model\News {
+                subclasses {
+                    # hier wichtig: index 0 überschreiben für die
+                    # normale News-Ansicht
+                    # 0 == Typ-Auswahl an News-Datensatz
+                    0 = T3Dev\Tmpl\Domain\Model\NewsDefault
+                    }
+                }
+                T3Dev\Tmpl\Domain\Model\NewsDefault {
+                    mapping {
+                        recordType = 0
+                        tableName = tx_news_domain_model_news
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2018-10-23T12:23:27Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="content" approved="yes">
+				<source><![CDATA[Content area]]></source>
+				<target><![CDATA[Область для контента]]></target>
+			</trans-unit>
+			<trans-unit id="title" approved="yes">
+				<source><![CDATA[Standard Page]]></source>
+				<target><![CDATA[Стандартная страница]]></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

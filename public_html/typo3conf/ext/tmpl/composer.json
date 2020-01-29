@@ -1,0 +1,23 @@
+{
+    "name": "t3dev/tmpl",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "T3Dev\\Tmpl\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "T3Dev\\Tmpl\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "tmpl": "self.version",
+        "typo3-ter/tmpl": "self.version"
+    }
+}

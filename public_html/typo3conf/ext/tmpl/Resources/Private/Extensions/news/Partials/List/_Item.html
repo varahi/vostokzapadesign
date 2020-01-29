@@ -1,0 +1,68 @@
+        <div class="stock__item stock__item_size-small">
+          <div>
+            <img class="stock__img" src="./img/stock2.png" alt="">
+          </div>
+          <div class="stock-text">
+            <div class="stock-text__date">
+              <span>29.05.2018</span>
+            </div>
+            <div class="def-text stock-text__text">
+              <p>
+                FUCHS TITAN - это широка€ линейка продуктов, разработанных концерном дл€ легковых автомобилей, грузовиков, автобусов, сельскохоз€йственной,
+                дорожной и строительной техники, а также газовых и двухтактных двигателей широкого спектра
+              </p>
+            </div>
+            <div class="stock-text__link">
+              <a href="#">ѕодробнее</a>
+            </div>
+          </div>
+        </div>
+
+        
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+  
+
+	<div class="stock__item stock__item_size-small">
+		<div>
+				<f:if condition="{newsItem.falMediaPreviews}">
+					<!-- media preview element -->
+					<f:then>
+						<f:alias map="{mediaElement: '{newsItem.falMediaPreviews.0}'}">
+							<f:if condition="{mediaElement.originalResource.type} == 2">
+								<f:image class="stock__img" image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.last.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.last.media.image.maxHeight)}"/>
+							</f:if>
+							<f:if condition="{mediaElement.originalResource.type} == 4">
+								<f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement}"/>
+							</f:if>
+							<f:if condition="{mediaElement.originalResource.type} == 5">
+								<f:image class="stock__img" image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.last.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.last.media.image.maxHeight)}"/>
+							</f:if>
+						</f:alias>
+					</f:then>
+					<f:else>
+						<f:if condition="{settings.displayDummyIfNoMedia}">
+								<f:image class="stock__img" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.last.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.last.media.image.maxHeight)}"/>
+						</f:if>
+					</f:else>
+				</f:if>
+		</div>		
+			
+			<div class="stock-text">
+			   	<div class="stock-text__date">
+		    		<span >
+						<f:format.date format="{f:translate(key:'news.dateFormat', extensionName: 'tmpl')}">{newsItem.datetime}</f:format.date>
+						<meta itemprop="datePublished" content="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}" />    	
+		    		</span>
+		    	</div>
+	        	<div class="def-text stock-text__text">
+            		<p>
+						{newsItem.title}
+					</p>
+            	</div>
+            	<div class="stock-text__link">
+              		<a href="#">ѕодробнее</a>
+ 				</div>
+	</div>
+</html> 
