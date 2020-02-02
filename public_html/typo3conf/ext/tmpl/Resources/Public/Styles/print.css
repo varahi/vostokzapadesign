@@ -1,0 +1,76 @@
+body {
+	background: none;
+}
+
+#wrap-1 {
+	padding: 0;
+	margin: 0;
+	border: 0 none;
+	background: #FFFFFF;
+}
+
+#bg { background: none; display: none; }
+
+/******************************
+* Header :: Begin
+******************************/
+
+#header {
+	padding: 37px 0 0 10px;
+	width: 840px;
+	float: left;
+}
+
+#shortcuts { display: none; }
+
+#main-menu { display:none; }
+#main-menu li a { background: none; text-indent: 0px; }
+
+#header-image {
+	display: none;
+}
+
+#image-caption {
+	display: none;
+}
+
+/******************************
+* Header :: End
+******************************/
+
+/******************************
+* Middle :: Begin
+******************************/
+#column-left { display:none; }
+#column-right { width:auto; float:none; border:none; }
+	#column-right ul { list-style: disc outside; }
+		#column-right ul li { padding: 0; background: none; }
+	
+		#column-right ul.paginator { list-style: none; }
+
+		#column-right ul.openable li { list-style: none; background: none; padding: 0; }
+			#column-right ul.openable li div { display: block; background: #F0F1F2; padding: 1px 20px; margin: 10px 0; color: #333333; cursor: default; }
+				
+		#column-right ul.sitemap ul li { padding: 0; background: none; }
+				
+
+		#column-right ul.simple li { list-style: none; }
+	
+/******************************
+* Middle :: End
+******************************/
+
+/******************************
+* Footer :: Begin
+******************************/
+
+#footer {
+	margin: 0;
+}
+	
+	#at-right {	float: left; padding: 0 0 0 40px;	}
+		#footer-menu { display: none; }
+
+/******************************
+* Footer :: End
+******************************/

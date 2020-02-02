@@ -1,0 +1,169 @@
+.tx-powermail h3, 
+.tx-powermail legend {
+	display: none;
+}
+
+.powermail_fieldwrap_type_select {
+  color: #D90007;
+  margin-bottom: 10px;
+}
+.powermail_label {
+	display: inline-block;
+	width: 300px !important;
+	text-align: left !important;	
+	padding: 0 !important;
+	text-decoration: underline !important;	
+}
+.powermail_label > span {
+	display: inline-block;
+  text-decoration: none !important;
+	margin-left: 5px;
+}
+span.select-after {
+	color: #A7A9AC;
+	text-decoration: none !important;	
+	font-style: italic;
+	margin: 0 0 0 10px;
+	border: none;
+}
+.powermail_label-no-decoration {
+	text-decoration: none !important;		
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.powermail_fieldwrap_type_input {
+	margin: 15px 0;
+}
+.powermail_fieldwrap_type_input .powermail_label {
+  text-decoration: none !important;	
+}
+span.mandatory {
+	color: #ff0000 !important;
+}
+.tx-powermail input[type="text"],
+.tx-powermail input[type="email"] {
+	border: 0 none;
+	padding: 1px 5px;
+	font-size: 12px;
+	color: #000000;
+	width: 140px;	
+}
+/*
+.tx-powermail input[type="submit"] {
+	float: right;
+	margin-right: 10px;
+	padding: 0 20px 0 0;
+  border-left: solid 7px #D90007;
+  border-right: solid 9px #D90007;
+  border-top: solid 1px #D90007;
+  border-bottom: solid 1px #D90007;
+  font-size: 12px;
+  color: #FFFFFF;
+  background: #D90007 url(../Images/icons/ico-arrow-white.gif) right 8px no-repeat;
+}
+*/
+
+/* After update powermail */
+
+/*
+.tx-powermail input[type="text"],
+.tx-powermail input[type="email"] {
+	border: 0 none;
+  padding: 1px 5px;
+  font-size: 12px;
+  color: #000000;
+  width: 200px;	
+}
+
+#c1067 .tx-powermail input[type="text"],
+#c1067 .tx-powermail input[type="email"] {
+	width: 140px;
+}
+
+.tx-powermail input[type="submit"] {
+	float: left;
+	margin-left: 300px;
+}
+
+.tx-powermail label {
+	float: left;
+  clear: left;
+  width: 180px;
+  padding: 1px 20px 0 0;
+  text-align: right;
+}
+*/
+
+span.select-after {
+	position: absolute;
+	left: 450px;
+}
+
+#middle form label {
+}
+.float-left {
+}
+.input-text {
+	border: 0 none;
+  padding: 1px 5px;
+  font-size: 12px;
+  color: #000000;
+  width: 200px;
+}
+
+
+.tx-powermail form fieldset { 
+	background: #F0F1F2; 
+	padding: 30px; 
+	width: auto; 
+	border: 0 none; 
+}
+.tx-powermail form dfn { 
+	text-decoration:none; 
+	color:#A7A9AC; 
+}
+.tx-powermail form label { 
+	float: left; 
+	clear: left; 
+	width: 180px; 
+	padding: 1px 20px 0 0; 
+	text-align: right; 
+}
+.tx-powermail form div.form-line { 
+/*	float: left; */
+	width: auto; 
+	clear: left; 
+	margin: 0 0 10px 0; 
+}
+
+.tx-powermail form input.input-text { 
+	border: 0 none; 
+	padding: 1px 5px; 
+	font-size: 12px; 
+	color: #000000; 
+	width: 200px; 
+}
+.tx-powermail form input.input-submit { 
+	padding: 0 20px 0 0; 
+	border-left: solid 7px #D90007; 
+	border-right: solid 9px #D90007; 
+	border-top: solid 1px #D90007; 
+	border-bottom: solid 1px #D90007; 
+	font-size: 12px; color: #FFFFFF; 
+	background: #D90007 url(../Images/icons/ico-arrow-white.gif) right 8px no-repeat; 
+}
+
+.tx-powermail form textarea { 
+	border: 0 none; 
+	padding: 3px 5px; 
+	font-size: 12px; 
+	color: #999999; 
+	width: 200px; 
+	height: 84px; 
+}
+
+.tx-powermail form div.radio input { margin-left:20px; }
+		.tx-powermail form div.radio label { display: inline-block; width:300px; text-align:left; }
+		.tx-powermail form label span { color:#A7A9AC; }
+		.tx-powermail form h3 { margin:0 0 10px 20px; }
