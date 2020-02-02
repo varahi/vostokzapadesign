@@ -17,12 +17,13 @@ class MigratePageLayoutsCommandController extends AbstractCommandController
      */
     public function migratePageLayoutsCommand() {
 
-        // Update standard (Übersichtsseite)
-        $this->updatePageLayoutsQuery('`tx_fed_page_controller_action` = \'Devcompany.VostokzapadesignSite->homePage\' ', array('`backend_layout`' => 'pagets__1') );
-        $this->updatePageLayoutsQuery('`tx_fed_page_controller_action` = \'Devcompany.VostokzapadesignSite->homePage\' ', array('`backend_layout`' => 'pagets__1') );
-        // Update standard on next level
-        $this->updatePageLayoutsQuery('`tx_fed_page_controller_action_sub` = \'Devcompany.VostokzapadesignSite->innerPage\' ', array('`backend_layout_next_level`' => 'pagets__2'));
-        $this->updatePageLayoutsQuery('`tx_fed_page_controller_action_sub` = \'Devcompany.VostokzapadesignSite->innerPage\' ', array('`backend_layout_next_level`' => 'pagets__2') );
+        // Update home page
+        $this->updatePageLayoutsQuery(' `tx_fed_page_controller_action` =  \'Devcompany.VostokzapadesignSite->homePage\' ', array('`backend_layout`' => ' \'pagets__1\' '));
+        $this->updatePageLayoutsQuery(' `tx_fed_page_controller_action_sub` =  \'Devcompany.VostokzapadesignSite->homePage\' ', array('`backend_layout_next_level`' => ' \'pagets__1\' '));
+
+        // Update inner page
+        $this->updatePageLayoutsQuery(' `tx_fed_page_controller_action` =  \'Devcompany.VostokzapadesignSite->innerPage\' ', array('`backend_layout`' => ' \'pagets__2\' '));
+        $this->updatePageLayoutsQuery(' `tx_fed_page_controller_action_sub` =  \'Devcompany.VostokzapadesignSite->innerPage\' ', array('`backend_layout_next_level`' => ' \'pagets__2\' '));
 
         $msg = " Page layouts are updated ";
         $config = $this->getConfiguration();
@@ -42,7 +43,7 @@ class MigratePageLayoutsCommandController extends AbstractCommandController
 
         $db = $this->getDatabaseConnection();
         $table = '`pages`';
-        //$db->exec_UPDATEquery($table, $where, $updateArray, TRUE);
+        $db->exec_UPDATEquery($table, $where, $updateArray, TRUE);
 
     }
 
