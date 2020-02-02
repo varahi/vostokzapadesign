@@ -2,29 +2,27 @@
 defined('TYPO3_MODE') || die('Access denied.');
 
 /**
+ * Add TypoScript
+ */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Basis tmpl extension');
+
+/**
  * Page TS Config
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig
-('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tmpl/Configuration/TSConfig/page.ts">');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tmpl/Configuration/TsConfig/page.tsconfig">');
 
 /**
- * add some basic User TS Config
+ * Add some basic User TS Config
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig
-('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tmpl/Configuration/TSConfig/user.ts">');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tmpl/Configuration/TsConfig/user.tsconfig">');
 
 /**
- * Main Typoscript
+ * Add rte_ckeditor custom config
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('tmpl', 'Configuration/TypoScript', 'Site Template');
+//$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = 'EXT:tmpl/Configuration/RTE/Custom.yaml';
 
-/*
-$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-    \TYPO3\CMS\Core\Imaging\IconRegistry::class
-);
-$iconRegistry->registerIcon(
-    'default-icon',
-    \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-    ['source' => 'EXT:tmpl/Resources/Public/Icons/edu.gif']
-);
-*/
+/**
+ *  Configuration ce for tables
+ */
+//\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_tmplcemainslider_item');
+

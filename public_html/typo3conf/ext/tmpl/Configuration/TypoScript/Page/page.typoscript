@@ -1,0 +1,99 @@
+#
+# The main page object and its most basic properties
+#
+page = PAGE
+page {
+
+    typeNum = 0
+
+    # adding some helpful classes to <body>
+    bodyTagCObject = COA
+    bodyTagCObject {
+
+        wrap = <body|>
+
+        # adding an ID
+        10 = TEXT
+        10 {
+            data = TSFE:id
+            noTrimWrap = | id="page-|"|
+        }
+
+        # ...and some helpful classes
+        20 =< lib.bodytag-classes
+        20.stdWrap.noTrimWrap = | class="|"|
+
+    }
+
+    5 < tt_content.list.20.cookies_main
+
+    # ********************************************************************************************
+    # Layout
+    # ********************************************************************************************
+    10 = FLUIDTEMPLATE
+    10 {
+
+        templateName = TEXT
+        templateName.stdWrap {
+
+            cObject = COA
+            cObject {
+
+                10 = CASE
+                10 {
+                    key.data = levelfield:-2,backend_layout_next_level,slide
+                    key.override.field = backend_layout
+
+                    pagets__1 = TEXT
+                    pagets__1.value = Home
+
+                    pagets__2 = TEXT
+                    pagets__2.value = Inner
+
+                    default = TEXT
+                    default.value = Inner
+                }
+
+            }
+            ifEmpty = Default
+        }
+
+        templateRootPaths {
+            10 = {$plugin.tx_tmpl.view.templateRootPath}
+        }
+        layoutRootPaths {
+            10 = {$plugin.tx_tmpl.view.layoutRootPath}
+        }
+        partialRootPaths {
+            10 = {$plugin.tx_tmpl.view.partialRootPath}
+        }
+
+        variables {
+
+            // Render colpos sections
+            content < styles.content.get
+            content {
+                stdWrap.wrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
+                stdWrap.required = 1
+            }
+
+            content_sidebar < styles.content.get
+            content_sidebar.select.where = colPos=1
+        }
+
+    }
+
+}
+
+
+
+#########################
+##### DEVELOPMENT - Start
+
+#[applicationContext = Development]
+#    page.includeCSS.00_style = /assets/css/style.css
+#    page.includeJS.00_main = /assets/js/main.js
+#[end]
+
+##### DEVELOPMENT - End
+#########################
