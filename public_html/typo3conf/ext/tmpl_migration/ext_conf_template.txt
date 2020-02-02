@@ -1,0 +1,2 @@
+# cat=basic/enable; type=boolean; label=Enable devLog:Debugging-only! Required 3rd party dev_log extension
+enableDevLog = 0
