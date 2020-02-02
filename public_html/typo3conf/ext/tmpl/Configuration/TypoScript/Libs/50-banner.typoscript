@@ -1,0 +1,79 @@
+lib.banner = COA
+lib.banner {
+    wrap = <div class="header-image">|</div>
+    10 = IMAGE
+    10 {
+        params = class="image-responsive"
+        file.treatIdAsReference = 1
+        file.import.data = levelmedia: -1,slide
+        file.import.listNum = 0
+        file.import.override.field = media
+        altText.data = page : subtitle // page : title
+    } # 10
+
+    20 = IMAGE
+    20 {
+        params = class="image-caption"
+        altText.data = page:title
+
+        file = GIFBUILDER
+        file {
+            XY = [20.w]+58,60
+
+            10 = BOX
+            10.dimensions = 0,0,[20.w]+58,60
+            10.color = #666666
+
+            20 = TEXT
+            20 {
+                text.data = page : subtitle // page : title
+                offset = 29,37
+
+                fontColor = #ffffff
+                fontFile = typo3conf/ext/vostokzapadesign_site/Resources/Public/fonts/freeset_cyr.ttf
+
+                #New parameter
+                fontSize = 26
+
+                #Old parameter
+                #fontSize = 19
+            } # 20
+
+        } # file
+
+    } # 20
+
+} # lib.banner
+
+
+
+[treeLevel = 0]
+    lib.banner.20 >
+[global]
+
+lib.banner2 {
+    class = COA
+    class {
+        10 = TEXT
+        10.value = banner
+
+        20 = TEXT
+        20 {
+            value = no-margin-right
+            noTrimWrap = | ||
+            if.isTrue.field = field_class
+        }
+    }
+
+    image = COA
+    image {
+        10 = IMG_RESOURCE
+        10 {
+            file.import = uploads/tx_templavoila/
+            file.import.field = field_image
+            file.import.listNum = 0
+        }
+
+        wrap =background-image:url(|);
+    }
+}

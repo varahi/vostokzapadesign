@@ -1,0 +1,23 @@
+#
+# Defining some general constants
+#
+
+# basic config options
+config {
+
+    language = ru
+    locale = ru_RU.UTF-8
+    sys_language_uid = 0
+    locale_all = ru_RU
+
+    page {
+        siteTitle =
+        copyright =
+        address =
+    }
+
+    meta {
+        description =
+        keywords =
+    }
+}

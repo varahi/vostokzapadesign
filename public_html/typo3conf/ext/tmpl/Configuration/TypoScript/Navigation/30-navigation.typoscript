@@ -1,0 +1,115 @@
+# lib.navigation.submenu
+lib.navigation.submenu = HMENU
+lib.navigation.submenu {
+    special = directory
+    special.value = {$const.rootPageID}
+
+    1 = TMENU
+    1.NO.doNotShowLink = 1
+
+    2 = TMENU
+    2 {
+        NO.linkWrap = <li>|</li>
+
+        ACT = 1
+        ACT.linkWrap = <li class="active">|</li>
+
+        wrap = <ul class="left-menu">|</ul>
+    } # 2 end
+
+    3 = TMENU
+    3 {
+        NO.linkWrap = <li>|</li>
+
+        ACT = 1
+        ACT.linkWrap = <li class="active">|</li>
+
+        wrap = <li><ul>|</ul></li>
+    } # 3 end
+
+    4 = TMENU
+    4 {
+        NO.linkWrap = <li>|</li>
+
+        ACT = 1
+        ACT.linkWrap = <li class="active">|</li>
+
+        wrap = <li><ul>|</ul></li>
+    } # 4 end
+}
+
+# lib.navigation.shortcuts
+lib.navigation.shortcuts = HMENU
+lib.navigation.shortcuts {
+    special = directory
+    special.value = 22
+
+    1 = TMENU
+    1 {
+        noBlur = 1
+
+        wrap =  <div id="header-phone">8 (495) 641-83-51</div><ul id="shortcuts">|</ul>
+
+        NO.linkWrap = <li>|</li>
+        NO.doNotLinkIt = 1
+        NO.stdWrap.cObject = COA
+        NO.stdWrap.cObject {
+
+            10 = COA
+            10 {
+                wrap = <a|>
+
+                10 = TEXT
+                10.typolink.parameter.field = uid
+                10.typolink.returnLast = url
+                10.noTrimWrap = | href="|"|
+
+                20 = IMG_RESOURCE
+                20 {
+                    file.import = uploads/media/
+                    file.import.field = media
+                    file.import.listNum = 0
+                    stdWrap.noTrimWrap = | style="background-image: url(/|);"|
+                }
+            }
+
+            20 = TEXT
+            20.field = title
+
+            30 = TEXT
+            30.value = </a>
+        }
+    }
+}
+
+# lib.navigation.footermenu
+lib.navigation.footermenu = HMENU
+lib.navigation.footermenu {
+    #special = directory
+    #special.value = {$const.rootPageID}
+    special = list
+    special.value = {$page.footer.footerMenu}
+
+    1 = TMENU
+    1 {
+        wrap = <ul class="footer__menu">|</ul><div class="clearfix"></div>
+        NO {
+            #doNotLinkIt = 1
+            #stdWrap.typolink.parameter = uid
+            allStdWrap.wrap = <li>*</li>||<li><span>|</span>*</li>
+            allStdWrap.wrap.splitChar = *
+        }
+    }
+}
+
+lib.navigation.mapLink >
+lib.navigation.mapLink = TEXT
+lib.navigation.mapLink {
+    value = {$page.footer.mapTitle}
+    stdWrap {
+        typolink.parameter = {$page.footer.mapLink}
+        typolink.ATagParams = rel="nofollow"
+        //wrap = <p>|</p>
+    }
+}
+
