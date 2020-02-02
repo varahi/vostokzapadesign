@@ -1,0 +1,10 @@
+.pull-lg-8 .ce-gallery img {
+	width: auto !important;
+	max-width: 100% !important;
+	height: auto !important;
+}
+.left-column .row-images-list .csc-textpic-image img {
+	width: auto !important;
+	max-width: 100% !important;
+	height: auto !important;
+}

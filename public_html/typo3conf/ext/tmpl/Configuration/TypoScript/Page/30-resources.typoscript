@@ -35,6 +35,9 @@ page {
         css_file101 = EXT:tmpl/Resources/Public/Styles/style.css
         css_file102 = EXT:tmpl/Resources/Public/Styles/menu.css
         css_file103 = EXT:tmpl/Resources/Public/Styles/media_queries.css
+
+
+        200_custom_css = EXT:tmpl/Resources/Public/Css/custom.css
     }
 
     # Js to header

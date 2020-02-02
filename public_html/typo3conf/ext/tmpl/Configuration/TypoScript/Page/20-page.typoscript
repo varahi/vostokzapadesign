@@ -71,14 +71,17 @@ page {
         variables {
 
             // Render colpos sections
-            content < styles.content.get
-            content {
-                stdWrap.wrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
-                stdWrap.required = 1
-            }
+            #content < styles.content.get
+            #content {
+            #    stdWrap.wrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
+            #    stdWrap.required = 1
+            #}
 
-            content_sidebar < styles.content.get
-            content_sidebar.select.where = colPos=1
+            content_right < styles.content.get
+            content_right.select.where = colPos=1
+
+            content_left < styles.content.get
+            content_left.select.where = colPos=0
         }
 
     }
