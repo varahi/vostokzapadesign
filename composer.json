@@ -49,6 +49,8 @@
 	},
 	"autoload": {
 		"psr-4": {
+			"T3Dev\\Tmpl\\" : "public_html/typo3conf/ext/tmpl/Classes",
+			"T3Dev\\TmplMigration\\" : "public_html/typo3conf/ext/tmpl_migration/Classes",
 			"Nwt\\Imagecrop\\" : "public_html/typo3conf/ext/nwt_imagecrop/Classes",
 			"Itribe\\TyposcriptCode\\" : "public_html/typo3conf/ext/typoscript_code/Classes",
 			"RENOLIT\\NewsFalttnewsimport\\" : "public_html/typo3conf/ext/news_falttnewsimport/Classes",
