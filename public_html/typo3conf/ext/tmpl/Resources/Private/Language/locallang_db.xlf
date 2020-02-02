@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-12-26T00:01:00Z" product-name="tmpl">
+		<header/>
+		<body>
+
+			<trans-unit id="tt_content.spaceBefore" xml:space="preserve">
+				<source>Space Before (margin px) </source>
+			</trans-unit>
+			<trans-unit id="tt_content.spaceAfter" xml:space="preserve">
+				<source>Space After (margin px) </source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
