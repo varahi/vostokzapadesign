@@ -28,7 +28,6 @@
 		"fluidtypo3/fluidcontent": "^5.2",
 		"fluidtypo3/fluidpages": "^4.1",
 		"fluidtypo3/flux": "^8.2.1",
-		"jonathanheilmann/jh_magnificpopup": "^1.1",
 		"sgalinski/lfeditor": "^5.1",
 		"koninklijke-collective/my-redirects": "^3.4",
 		"georgringer/news": "^6.3",
@@ -39,7 +38,8 @@
 		"svewap/ws-scss": "^1.1.7",
 		"georgringer/news-fal-migration": "^1.0",
 		"beechit/news-ttnewsimport": "^2.0",
-		"friendsoftypo3/compatibility7": "^8.7"
+		"friendsoftypo3/compatibility7": "^8.7",
+		"lavitto/typo3-fancybox": "^1.0"
 	},
 	"require-dev": {
 		"deployer/deployer": "^6",
@@ -54,7 +54,6 @@
 			"Nwt\\Imagecrop\\" : "public_html/typo3conf/ext/nwt_imagecrop/Classes",
 			"Itribe\\TyposcriptCode\\" : "public_html/typo3conf/ext/typoscript_code/Classes",
 			"RENOLIT\\NewsFalttnewsimport\\" : "public_html/typo3conf/ext/news_falttnewsimport/Classes",
-			"T3Dev\\VostokzapadesignSite\\" : "public_html/typo3conf/ext/vostokzapadesign_site/Classes",
 			"T3Dev\\T3devcarousel\\" : "public_html/typo3conf/ext/t3devcarousel/Classes",
 			"WMDB\\TtNews\\" : "public_html/typo3conf/ext/tt_news/Classes"
 		}

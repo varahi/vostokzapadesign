@@ -4,7 +4,7 @@ lib.logo {
     wrap = |
     10 = IMAGE
     10 {
-        file = {$template_path}/Resources/Public/Images/logo.svg
+        file = EXT:tmpl/Resources/Public/Images/logo.svg
         altText = {$page.header.logoTitle}
         titleText = {$page.header.logoTitle}
         file.width = 242
