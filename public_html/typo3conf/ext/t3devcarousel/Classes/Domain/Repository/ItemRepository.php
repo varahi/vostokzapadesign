@@ -32,12 +32,29 @@ namespace T3Dev\T3devcarousel\Domain\Repository;
 class ItemRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
 
+    public function initializeObject()
+    {
+        /** @var  \TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings $querySettings */
+        $querySettings = $this->objectManager->get( \TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings::class );
+        $querySettings->setRespectStoragePage(false);
+        $this->setDefaultQuerySettings($querySettings);
+    }
+
     /**
      * @var array
      */
     protected $defaultOrderings = array(
         'sorting' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING
     );
+
+    public function findLimit() {
+        $query = $this->createQuery();
+        $result = $query
+            ->setLimit(10)
+            ->setOrderings(array('crdate' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_DESCENDING))
+            ->execute();
+        return $result->toArray();
+    }
     
     /**
      * @param $ttContent
@@ -45,8 +62,8 @@ class ItemRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
     public function findByTtContent($ttContent)
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setRespectSysLanguage(FALSE);
-        $query->getQuerySettings()->setRespectStoragePage(FALSE);
+        //$query->getQuerySettings()->setRespectSysLanguage(FALSE);
+        //$query->getQuerySettings()->setRespectStoragePage(FALSE);
         $object = $query->matching($query->equals('ttContent', $ttContent))->execute();
         return $object;
     }

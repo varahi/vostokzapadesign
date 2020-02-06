@@ -6,14 +6,6 @@ namespace T3Dev\T3devcarousel\Controller;
  */
  abstract class AbstractController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
-     /**
-      * configurationManager
-      *
-      * @var TYPO3\CMS\Extbase\Configuration\ConfigurationManager
-      * @inject
-      */
-     protected $configurationManager = null;
-
 
      protected function findUidsByPid($pageId) {
          $sysLanguageUid = $GLOBALS['TSFE']->sys_language_uid;

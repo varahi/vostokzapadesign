@@ -31,7 +31,7 @@ namespace T3Dev\T3devcarousel\Controller;
  */
 class ItemController extends AbstractController
 {
-    
+
     /**
      * itemRepository
      *
@@ -39,7 +39,7 @@ class ItemController extends AbstractController
      * @inject
      */
     protected $itemRepository = NULL;
-    
+
     /**
      * action list
      *
@@ -47,12 +47,12 @@ class ItemController extends AbstractController
      */
     public function listAction()
     {
-
-        // Get content object
         $cObj = $this->configurationManager->getContentObject();
         $data = $cObj->data;
         $uidTtContent = $data['uid'];
+
         $items = $this->itemRepository->findByTtContent($uidTtContent);
+        //$items = $this->itemRepository->findLimit();
         $this->view->assign('items', $items);
         $this->view->assign('cObjs', $cObj);
         $this->view->assign('uid', $uidTtContent);
@@ -62,6 +62,7 @@ class ItemController extends AbstractController
         $countUids = $this->findUidsByPid($currentPid);
         $this->view->assign('countUids', $countUids);
 
-    }
+        //\TYPO3\CMS\Core\Utility\DebugUtility::debug($uidTtContent);
 
+    }
 }
