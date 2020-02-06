@@ -88,7 +88,12 @@ page {
 
 }
 
-
+page.bodyTag >
+page.bodyTagCObject = TEXT
+page.bodyTagCObject {
+    field = uid
+    wrap = <body class="uid-|">
+}
 
 #########################
 ##### DEVELOPMENT - Start

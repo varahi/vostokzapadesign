@@ -4,4 +4,7 @@
 CREATE TABLE tt_content (
   spaceBefore smallint (5) DEFAULT '' NOT NULL,
   spaceAfter smallint (5) DEFAULT '' NOT NULL,
+  tx_nwtimagecrop_cropscaling tinyint(3) DEFAULT '0' NOT NULL,
+  tx_nwtimagecrop_cropscaling_ratio varchar(100) DEFAULT '0' NOT NULL,
+  tx_nwtimagecrop_cropscaling_orient tinyint(3) DEFAULT '0' NOT NULL
 );

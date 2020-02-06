@@ -10,6 +10,12 @@
 			<trans-unit id="tt_content.spaceAfter" xml:space="preserve">
 				<source>Space After (margin px) </source>
 			</trans-unit>
+			<trans-unit id="tt_content.cropscalling" xml:space="preserve">
+				<source>Cropscalling</source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscalling.I.0" xml:space="preserve">
+				<source>Activated</source>
+			</trans-unit>
 
 		</body>
 	</file>

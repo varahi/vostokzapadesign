@@ -2,7 +2,7 @@
 lib.navigation.submenu = HMENU
 lib.navigation.submenu {
     special = directory
-    special.value = {$const.rootPageID}
+    special.value = {$config.rootPageId}
 
     1 = TMENU
     1.NO.doNotShowLink = 1

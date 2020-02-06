@@ -14,3 +14,25 @@ plugin.tx_tmpl {
         storagePid =
     }
 }
+
+
+page {
+    header {
+        logoTitle = Школа флористики и дизайна в Москве "Восток | Запад"
+    }
+    footer {
+        // copyright в футере
+        footerCopyright = &copy; 2008-2019 ООО «Восток—Запад». Все права защищены.
+        // Id страниц в меню футера
+        footerMenu = 13, 62, 42, 222, 171, 9
+        // Информация о разработчике
+        developerInfo = Разработка сайта — <a href="http://www.adwz.ru/" rel="nofollow" target="_blank">Adwizard</a>
+        // Id страницы на схему проезда
+        mapLink = 26
+        // Заголовок схемы проезда
+        mapTitle = Схема проезда
+        // Телефон в футере
+        phone = +7 (495) 641-83-51
+    }
+    additionalMobileMenu = 1,420
+}

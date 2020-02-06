@@ -49,6 +49,8 @@ config {
     # disable image upscaling
     noScaleUp = 1
 
+    pageTitleSeparator =
+
 }
 
 config.baseURL = http://127.0.0.1/
