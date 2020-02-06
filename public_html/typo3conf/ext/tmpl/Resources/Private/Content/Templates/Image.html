@@ -7,10 +7,14 @@
 		<f:then>
 
 			<f:if condition="{gallery.count.columns} == 1">
-				<f:render partial="Media/Columns/GalleryCol1" arguments="{_all}" />
+				<f:for each="{gallery.rows}" as="row">
+					<f:render partial="Media/Columns/GalleryCol1" arguments="{_all}" />
+				</f:for>
 			</f:if>
 			<f:if condition="{gallery.count.columns} == 2">
-				<f:render partial="Media/Columns/GalleryCol2" arguments="{_all}" />
+				<f:for each="{gallery.rows}" as="row">
+					<f:render partial="Media/Columns/GalleryCol2" arguments="{_all}" />
+				</f:for>
 			</f:if>
 			<f:if condition="{gallery.count.columns} == 3">
 				<f:for each="{gallery.rows}" as="row">
@@ -18,7 +22,9 @@
 				</f:for>
 			</f:if>
 			<f:if condition="{gallery.count.columns} == 4">
-				<f:render partial="Media/Columns/GalleryCol4" arguments="{_all}" />
+				<f:for each="{gallery.rows}" as="row">
+					<f:render partial="Media/Columns/GalleryCol4" arguments="{_all}" />
+				</f:for>
 			</f:if>
 
 		</f:then>
