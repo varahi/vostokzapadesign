@@ -1,3 +1,35 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:media class="image-embed-item" file="{file}" width="{dimensions.width}" height="{dimensions.height}" alt="{file.alternative}" title="{file.title}" />
+<f:if condition="{data.cropscaling} == 1">
+	<f:then>
+
+		<f:switch expression="{data.cropscaling_ratio}">
+			<f:case value="0">
+				<f:media class="image-embed-item" file="{file}" width="{dimensions.width}" height="{dimensions.height}" alt="{file.alternative}" title="{file.title}" />
+			</f:case>
+			<f:case value="1">
+				<f:media class="image-embed-item" file="{file}" width="{dimensions.width}c" height="{dimensions.width}c" alt="{file.alternative}" title="{file.title}" />
+			</f:case>
+			<!-- ToDo: create different aspect ratios -->
+			<f:case value="16/9">
+				16/9
+			</f:case>
+			<f:case value="4/3">
+				4/3
+			</f:case>
+			<f:case value="19/6">
+				19/6
+			</f:case>
+			<f:case value="3/4">
+				3/4
+			</f:case>
+			<f:defaultCase>
+				<f:media class="image-embed-item" file="{file}" width="{dimensions.width}" height="{dimensions.height}" alt="{file.alternative}" title="{file.title}" />
+			</f:defaultCase>
+		</f:switch>
+
+	</f:then>
+	<f:else>
+		<f:media class="image-embed-item" file="{file}" width="{dimensions.width}" height="{dimensions.height}" alt="{file.alternative}" title="{file.title}" />
+	</f:else>
+</f:if>
 </html>

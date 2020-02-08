@@ -3,7 +3,6 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2019-12-26T00:01:00Z" product-name="tmpl">
 		<header/>
 		<body>
-
 			<trans-unit id="tt_content.spaceBefore" xml:space="preserve">
 				<source>Space Before (margin px) </source>
 			</trans-unit>
@@ -16,7 +15,27 @@
 			<trans-unit id="tt_content.cropscalling.I.0" xml:space="preserve">
 				<source>Activated</source>
 			</trans-unit>
-
+			<trans-unit id="tt_content.cropscaling_ratio" xml:space="preserve">
+				<source>Cropscaling: Aspect Ratio</source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.0" xml:space="preserve">
+				<source>-</source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.1" xml:space="preserve">
+				<source>1:1</source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.2" xml:space="preserve">
+				<source>16:9</source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.3" xml:space="preserve">
+				<source>4:3</source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.4" xml:space="preserve">
+				<source>9:16</source>
+			</trans-unit>
+			<trans-unit id="tt_content.cropscaling_ratio.I.5" xml:space="preserve">
+				<source>3:4</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
