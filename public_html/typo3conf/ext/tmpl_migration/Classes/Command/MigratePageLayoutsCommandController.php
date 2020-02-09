@@ -25,6 +25,10 @@ class MigratePageLayoutsCommandController extends AbstractCommandController
         $this->updatePageLayoutsQuery(' `tx_fed_page_controller_action` =  \'Devcompany.VostokzapadesignSite->innerPage\' ', array('`backend_layout`' => ' \'pagets__2\' '));
         $this->updatePageLayoutsQuery(' `tx_fed_page_controller_action_sub` =  \'Devcompany.VostokzapadesignSite->innerPage\' ', array('`backend_layout_next_level`' => ' \'pagets__2\' '));
 
+        // Set default inner page
+        $this->updatePageLayoutsQuery(' `backend_layout` =  \'fluidpages__fluidpages\' ', array('`backend_layout`' => ' \'pagets__2\' '));
+        $this->updatePageLayoutsQuery(' `backend_layout_next_level` =  \'fluidpages__fluidpages\' ', array('`backend_layout_next_level`' => ' \'pagets__2\' '));
+
         $msg = " Page layouts are updated ";
         $config = $this->getConfiguration();
         if ($config['enableDevLog']) {
