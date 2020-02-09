@@ -62,7 +62,5 @@ class ItemController extends AbstractController
         $countUids = $this->findUidsByPid($currentPid);
         $this->view->assign('countUids', $countUids);
 
-        //\TYPO3\CMS\Core\Utility\DebugUtility::debug($uidTtContent);
-
     }
 }
