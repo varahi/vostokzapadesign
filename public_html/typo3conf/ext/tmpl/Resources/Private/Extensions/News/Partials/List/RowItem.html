@@ -62,10 +62,10 @@
 		<n:removeMediaTags>
 			<f:if condition="{newsItem.teaser}">
 				<f:then>
-					<p itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.raw()}</p>
+					<p itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.stripTags()}</p>
 				</f:then>
 				<f:else>
-					<p itemprop="description">{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.raw()}</p>
+					<p itemprop="description">{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.stripTags()}</p>
 				</f:else>
 			</f:if>
 		</n:removeMediaTags>
