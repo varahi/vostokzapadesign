@@ -1,0 +1,47 @@
+<div class="col-xs-12 
+{f:if(condition: '{data.column_class}==0', then: 'col-sm-6' )} {f:if(condition: '{data.column_class}==1', then: 'col-sm-4' )}
+ teaser-wraper">
+	<f:link.typolink parameter="{data.header_link}" 
+		class="teaser teaser-type-1"  additionalAttributes="{data-mh: 'teaser-gr-1'}" >
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    
+    <f:if condition="{images.0}">
+    	<div class="teaser__thumbnail"
+			 {f:if(condition: '{data.vertical_align}==0', then: '' )}
+			 {f:if(condition: '{data.vertical_align}==1', then: 'data-img-vertical-align="top" ' )}
+			 {f:if(condition: '{data.vertical_align}==2', then: 'data-img-vertical-align="bottom" ' )}
+			>
+    		<f:image class="img-responsive" src="{images.0.uid}" treatIdAsReference="1" 
+    		alt="{images.0.alternative}" title="{images.0.title}" maxWidth="1200" class="teaser-thumbnail" />
+    	</div>
+    </f:if>
+
+		<f:if condition="{data.header}">
+			<div class="teaser__title">
+				<h3>{data.header}</h3>
+			</div>
+		</f:if>
+    
+		<f:if condition="{data.bodytext}">
+			<div class="teaser__desc">
+				<f:format.html>{data.bodytext}</f:format.html>
+			</div>
+		</f:if>
+		
+		<f:if condition="{data.header_link}">
+			<div class="teaser__more-link">
+				<f:if condition="{data.textfield1}">
+					<f:then>
+						<p class="pseudo-link">{data.textfield1}</p>
+					</f:then>
+					<f:else>
+						<p class="pseudo-link"><f:translate key="teaserWrapper.link.pseudoLink.title" extensionName="tmpl"/></p>
+					</f:else>					
+				</f:if>
+			</div>
+		</f:if>
+	</f:link.typolink>
+</div>

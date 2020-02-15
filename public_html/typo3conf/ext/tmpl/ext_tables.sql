@@ -6,5 +6,6 @@ CREATE TABLE tt_content (
   spaceAfter smallint (5) DEFAULT '' NOT NULL,
   cropscaling tinyint(3) DEFAULT '0' NOT NULL,
   cropscaling_ratio varchar(100) DEFAULT '0' NOT NULL,
-  cropscaling_orient tinyint(3) DEFAULT '0' NOT NULL
+  cropscaling_orient tinyint(3) DEFAULT '0' NOT NULL,
+  textfield text,
 );

@@ -47,6 +47,29 @@
 			<trans-unit id="tt_content.spaceBefore">
 				<source><![CDATA[Space Before (margin px) ]]></source>
 			</trans-unit>
+
+			<trans-unit id="ce.teaser_teacher_title">
+				<source><![CDATA[Teaser teacher]]></source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_teacher_description">
+				<source><![CDATA[Teaser teacher]]></source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_teacher.info">
+				<source><![CDATA[Teacher info]]></source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_teacher.image">
+				<source><![CDATA[Teacher image]]></source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_teacher.header">
+				<source><![CDATA[Title]]></source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_teacher.bodytext">
+				<source><![CDATA[Bodytext]]></source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_teacher.position">
+				<source><![CDATA[Position]]></source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
