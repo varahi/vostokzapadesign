@@ -75,6 +75,53 @@ class AbstractCommandController extends CommandController
 
 
     /**
+     * method get some element uids
+     *
+     * @return void
+     */
+    protected function getElementUids($elementName) {
+
+        $db = $this->getDatabaseConnection();
+
+        $where = "pages.uid = tt_content.pid
+                AND pages.deleted = 0
+                AND tt_content.deleted = 0
+                AND CType like '%fluidcontent_content%'
+                AND tx_fed_fcefile like '%$elementName%' ";
+        //AND sys_language_uid = $sysLanguageUid ";
+
+        $query = $db->SELECTquery('tt_content.uid', 'tt_content, pages', $where);
+        $res = $db->sql_query($query);
+
+        $uidsArr = [];
+        if ($res)
+            while ($uidRow = $db->sql_fetch_assoc($res)) {
+                $uidsArr[] = $uidRow['uid'];
+            }
+        $db->sql_free_result($res);
+        return $uidsArr;
+    }
+
+    /**
+     * Count updated items
+     *
+     * @return int Count of updated items type 'containers'
+     */
+    protected function countUpdatedItems($containerName)
+    {
+        $db = $this->getDatabaseConnection();
+        // $where = "tt_content.deleted = 0 and tt_content.hidden = 0";
+        $where = "tt_content.deleted = 0";
+        $where .= " and CType like '%fluidcontent_content%' ";
+        $where .= " and tx_fed_fcefile like '%Devcompany.VostokzapadesignSite:$containerName.html%' ";
+        $result = $db->exec_SELECTquery('COUNT(*) as cnt', self::TABLE_migrate, $where);
+        $count = $db->sql_fetch_assoc($result)['cnt'];
+
+        return $count;
+    }
+
+
+    /**
      * Write message to developers log (if 'enableDevLog' set to true)
      * and write message to file typo3temp/icd10_import_xml.log
      * and write message to stdout if command run in typo3/cli_dispatch.phpsh
