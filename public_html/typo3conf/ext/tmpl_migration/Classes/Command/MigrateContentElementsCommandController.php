@@ -16,11 +16,11 @@ class MigrateContentElementsCommandController extends AbstractCommandController
      * @return void
      */
     public function migrateContentElementsCommand() {
+
         $countTeacherCeElement = $this->countUpdatedItems('Fce_Teacher');
         $this->updateTeacherCeElement();
 
         $msg = " \n Updated {$countTeacherCeElement} content elements 'Fce_Teacher' \n ";
-
         $config = $this->getConfiguration();
         if ($config['enableDevLog']) {
             $this->devLog($msg);
@@ -35,9 +35,9 @@ class MigrateContentElementsCommandController extends AbstractCommandController
     protected function updateTeacherCeElement() {
 
         $db = $this->getDatabaseConnection();
-        $uids = $this->getElementUids('Devcompany.VostokzapadesignSite:Fce_Teacher.html');
-        $containerName = 'Fce_Teacher';
-        $ceContainerName = 'teaser';
+        $uids = $this->getElementUids('Fce_Teacher');
+        //$containerName = 'Fce_Teacher';
+        //$ceContainerName = 'teacher';
 
         foreach($uids as $key => $uid) {
 
@@ -54,35 +54,34 @@ class MigrateContentElementsCommandController extends AbstractCommandController
             // Full Name of Person
             if (is_array($flexform) && isset($flexform['data']['teacher']['lDEF']['title']['vDEF'])) {
                 $title = $flexform['data']['teacher']['lDEF']['title']['vDEF'];
-            } else {
-                $title = '';
+                $title = '\'' . addslashes($title) . '\'';
             }
 
             // Position of person
             if (is_array($flexform) && isset($flexform['data']['teacher']['lDEF']['position']['vDEF'])) {
                 $position = $flexform['data']['teacher']['lDEF']['position']['vDEF'];
-            } else {
-                $position = '';
+                $position = '\'' . addslashes($position) . '\'';
             }
 
             // Bodytext of person
             if (is_array($flexform) && isset($flexform['data']['teacher']['lDEF']['text']['vDEF'])) {
                 $bodytext = $flexform['data']['teacher']['lDEF']['text']['vDEF'];
-            } else {
-                $bodytext = '';
+                $bodytext = '\'' . addslashes($bodytext) . '\'';
             }
 
-            $where = "CType = 'fluidcontent_content' AND tx_fed_fcefile = 'Devcompany.VostokzapadesignSite:$containerName.html' AND uid = $uid";
-            $updateArray = array('CType' => 'ce_' . $ceContainerName, 'tx_fed_fcefile' => '',
-                'header' => $title, 'bodytext' => $bodytext, 'textfield' => $position);
+            $where = "`CType` = 'fluidcontent_content' AND `tx_fed_fcefile` = 'Devcompany.VostokzapadesignSite:Fce_Teacher.html' AND `uid` = $uid";
+            $updateArray = [
+                '`CType`' => '\'ce_teacher\'',
+                '`tx_fed_fcefile`' => ' \'\' ',
+                '`header`' =>  $title,
+                '`bodytext`' => $bodytext,
+                '`textfield`' => $position
+            ];
 
             $db->exec_UPDATEquery(self::TABLE_migrate, $where, $updateArray, TRUE);
-
-            //\TYPO3\CMS\Core\Utility\DebugUtility::debug($position);
+            //\TYPO3\CMS\Core\Utility\DebugUtility::debug($title);
 
         }
-
-
 
     }
 
