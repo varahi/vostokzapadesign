@@ -14,6 +14,21 @@ defined('TYPO3_MODE') or die();
                 'eval' => 'trim'
             ],
         ],
+
+        'is_last' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:ce.teaser_banner.is_last',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    '1' => [
+                        '0' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
+                    ]
+                ],
+                'default' => 0,
+            ]
+        ],
+
     ]
 );
 

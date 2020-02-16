@@ -70,6 +70,29 @@
 				<source><![CDATA[Position]]></source>
 			</trans-unit>
 
+			<trans-unit id="ce.teaser_banner_title">
+				<source><![CDATA[Teaser banner]]></source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_banner_description">
+				<source><![CDATA[Teaser banner]]></source>
+			</trans-unit>
+
+			<trans-unit id="ce.teaser_banner.info">
+				<source><![CDATA[Banner info]]></source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_banner.image">
+				<source><![CDATA[Banner image]]></source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_banner.header">
+				<source><![CDATA[Title]]></source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_banner.bodytext">
+				<source><![CDATA[Bodytext]]></source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_banner.is_last">
+				<source><![CDATA[Last banner in line ]]></source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

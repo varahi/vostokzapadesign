@@ -11,4 +11,4 @@
 # Ce content elements
 ##############
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_teacher/Configuration/TypoScript/" extensions="typoscript">
-#<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_teaser_card/Configuration/TypoScript/" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_banner/Configuration/TypoScript/" extensions="typoscript">
