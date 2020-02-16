@@ -19,10 +19,10 @@
 			</f:if>
 		</f:else>
 	</f:if>
-	<f:if condition="{file.description}">
-		<figcaption class="image-caption">
-			{file.description}
-		</figcaption>
-	</f:if>
 </figure>
+<f:if condition="{file.description}">
+	<div class="caption">
+		<p>{file.description}</p>
+	</div>
+</f:if>
 </html>
