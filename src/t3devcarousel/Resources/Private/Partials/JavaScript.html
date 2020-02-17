@@ -1,0 +1,10 @@
+
+<script type="text/javascript">
+    var sliders = {
+    <f:for each="{countUids}" as="countUid" iteration="itemIteration">
+        <f:alias map="{ang: {s: '{', e: '}'}}">
+            {countUid}: {ang.s}slider : '#slider_{countUid}', nav: '#slider_nav_{countUid}'{ang.e},
+        </f:alias>
+    </f:for>
+    };
+</script>
