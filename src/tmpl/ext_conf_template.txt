@@ -1,0 +1,6 @@
+
+# cat=basic; type=string; label=List of colPos: Enable col-xy-z only when colPos matches. Set both settings to 0 to show always.
+enableOnColPos = 0
+
+# cat=basic; type=string; label=List of gridelement column ids: Enable col-xy-z fields only when within these grid elemnents.
+enableOnGridColumnIds = 111

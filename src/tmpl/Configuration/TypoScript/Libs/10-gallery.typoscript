@@ -1,0 +1,52 @@
+lib.gallery >
+lib.gallery = HMENU
+lib.gallery.special = directory
+lib.gallery.special.value.data = TSFE:id
+lib.gallery {
+    1 = TMENU
+    1 {
+        expAll = 1
+        NO.linkWrap = <h2>|</h2>
+        NO.doNotLinkIt = 1
+    }
+    2 = TMENU
+    2 {
+        wrap = <div class="gallery">|</div><div class="clearfix"></div>
+        NO.allWrap.insertData = 1
+        NO.allWrap (
+      <div class="gallery__item">|</div>
+        )
+        NO.ATagTitle.field = description // title
+        NO.stdWrap.override.cObject = FILES
+        NO.stdWrap.override.cObject {
+            references {
+                table = pages
+                uid.field = uid
+                fieldName = media
+                width = 600c
+            }
+            renderObj = COA
+            renderObj {
+                10 = IMAGE
+                10 {
+                    file {
+                        import.data = file:current:publicUrl
+                        width = 640c
+                        height= 480c
+                        #maxW = 150
+                        #maxH = 105
+                    }
+
+                    altText.data = file:current:alternative
+                    titleText.data = file:current:title
+                }
+                20 = TEXT
+                20 {
+                    field = title
+                    wrap = <div class="gallery__item-caption">|</div>
+                    #typolink.parameter.field = uid
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+page.meta {
+    X-UA-Compatible = IE=edge,chrome=1
+    X-UA-Compatible.httpEquivalent = 1
+    viewport = width=device-width, initial-scale=1.0
+    description = TEXT
+    description.data = field:description // field:abstract // levelfield :-1, description, slide // levelfield :-1, abstract, slide
+    //robots              = index,follow
+    robots               = noindex,nofollow
+}

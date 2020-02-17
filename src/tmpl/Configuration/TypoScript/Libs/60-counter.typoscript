@@ -1,0 +1,8 @@
+lib.counter = CONTENT
+lib.counter {
+    table = tt_content
+    select {
+        pidInList = 139
+        orderBy = sorting
+    }
+}

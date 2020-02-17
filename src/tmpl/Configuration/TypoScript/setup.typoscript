@@ -1,0 +1,14 @@
+#
+# This is the very root template for any typoscript action
+#
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Page/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Plugins/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Libs/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Navigation/" extensions="typoscript">
+#<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Content/" extensions="typoscript">
+
+# Ce content elements
+##############
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_teacher/Configuration/TypoScript/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_banner/Configuration/TypoScript/" extensions="typoscript">

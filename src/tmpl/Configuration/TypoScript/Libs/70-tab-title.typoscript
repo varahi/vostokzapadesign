@@ -1,0 +1,43 @@
+lib.tab_title = COA
+lib.tab_title {
+    10 = IMG_RESOURCE
+    10 {
+        stdWrap.wrap = style="background-image: url(|);"
+
+        file = GIFBUILDER
+        file {
+            XY = 171,82
+
+            backColor = #ffffff
+
+            10 = TEXT
+            10 {
+                #text.field = field_tab_title_1
+                text.current = 1
+                fontSize = 11
+                offset = 20, 15
+                fontColor = #666666
+                fontFile = fileadmin/templates/fonts/freeset_cyr.ttf
+            }
+
+            20 = TEXT
+            20 {
+                #text.field = field_tab_title_1
+                text.current = 1
+                fontSize = 11
+                offset = 20, 62
+                fontColor = #D90007
+                fontFile = fileadmin/templates/fonts/freeset_cyr.ttf
+            }
+
+            #      30 = IMAGE
+            #      30 {
+            #        file = fileadmin/templates/images/content/arrow-down.gif
+            #        offset = 151,1
+            #      }
+
+        } # file
+
+    } # 10
+
+} # lib.tab_title
