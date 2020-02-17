@@ -44,6 +44,9 @@
 		"lochmueller/sourceopt": "dev-master",
 		"netresearch/rte-ckeditor-image": "dev-dev-TYPO3_9.x",
 		"sgalinski/lfeditor": "^5.0",
+		"svewap/ws-scss": "^1.1",
+		"t3dev/t3devcarousel": "^1.0",
+		"t3dev/tmpl": "^1.0",
 		"typo3-console/composer-auto-commands": "^0.2.0",
 		"typo3/cms-about": "^9.5",
 		"typo3/cms-adminpanel": "^9.5",
@@ -76,8 +79,8 @@
 		"typo3/cms-tstemplate": "^9.5",
 		"typo3/cms-viewpage": "^9.5",
 		"typo3/minimal": "^9.5",
-		"t3dev/tmpl": "^1.0",
-		"t3dev/t3devcarousel": "^1.0"
+		"typo3-ter/gridelements": "^9.4",
+		"laxap/bootstrap-grids": "^2.0"
 	},
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "2.14.0",
