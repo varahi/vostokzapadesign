@@ -1,0 +1,24 @@
+{
+  "name": "t3dev/t3devcarousel",
+  "type": "typo3-cms-extension",
+  "description": "Site template",
+  "authors": [
+    {
+      "name": "Dmitry Vasilev",
+      "role": "Developer"
+    }
+  ],
+  "version": "1.0.0",
+  "require": {
+    "typo3/cms-core": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "T3Dev\\T3devcarousel\\": "Classes"
+    }
+  },
+  "replace": {
+    "t3devcarousel": "self.version",
+    "typo3-ter/t3devcarousel": "self.version"
+  }
+}
