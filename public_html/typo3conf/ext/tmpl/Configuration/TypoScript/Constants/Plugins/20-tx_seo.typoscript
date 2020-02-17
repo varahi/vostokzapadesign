@@ -1,6 +1,0 @@
-plugin.tx_csseo {
-    sitemap.pages.rootPid = 1
-    structureddata.search.enable = 0
-    structureddata.breadcrumb.enable = 0
-    hreflang.enable = 0
-}
