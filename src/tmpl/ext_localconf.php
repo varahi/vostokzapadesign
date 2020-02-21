@@ -16,7 +16,7 @@ $icons_svg = [
     'tmpl-backend-layout' => 'EXT:tmpl/Resources/Public/icons/backend/backend_layout.svg'
 ];
 
-
+/*
 call_user_func(function () {
     if (TYPO3_MODE === 'BE') {
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup(
@@ -32,6 +32,7 @@ call_user_func(function () {
         );
     }
 });
+*/
 
 //change standart locallang for custom
 //$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['de']['EXT:sr_feuser_register/Resources/Private/Language/locallang.xlf'][]

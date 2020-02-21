@@ -1,13 +1,44 @@
 <?php
 namespace T3Dev\T3devcarousel\Controller;
 
+use TYPO3\CMS\Core\Database\ConnectionPool;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+
  /**
  * AbstractController
  */
  abstract class AbstractController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
-
      protected function findUidsByPid($pageId) {
+
+         $connection = GeneralUtility::makeInstance(ConnectionPool::class)
+             ->getConnectionForTable('tt_content');
+
+         /** @var  \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilder */
+         $queryBuilder = $connection->createQueryBuilder();
+         $result = $queryBuilder
+             ->select('tt_content.uid')
+             ->from('tt_content')
+             ->from('pages')
+             ->where(
+                 $queryBuilder->expr()->like(
+                     'CType',
+                     $queryBuilder->createNamedParameter('%' . $queryBuilder->escapeLikeWildcards('t3devcarousel_t3devcarousel') . '%')
+                 ),
+                 $queryBuilder->expr()->eq('pages.uid', $pageId)
+             )
+             ->execute();
+
+         $uidsArr = [];
+         while ($row = $result->fetch()) {
+             $uidsArr[] = $row['uid'];
+         }
+
+         return $uidsArr;
+
+     }
+
+     protected function _findUidsByPid_old($pageId) {
          $sysLanguageUid = $GLOBALS['TSFE']->sys_language_uid;
 
          $where = "pages.uid = $pageId
