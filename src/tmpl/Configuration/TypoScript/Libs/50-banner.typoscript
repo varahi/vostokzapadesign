@@ -30,7 +30,7 @@ lib.banner {
                 offset = 29,37
 
                 fontColor = #ffffff
-                fontFile = typo3conf/ext/vostokzapadesign_site/Resources/Public/fonts/freeset_cyr.ttf
+                fontFile = EXT:tmpl/Resources/Public/Fonts/freeset_cyr.ttf
 
                 #New parameter
                 fontSize = 26

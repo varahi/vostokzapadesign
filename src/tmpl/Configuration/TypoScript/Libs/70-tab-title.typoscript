@@ -17,7 +17,7 @@ lib.tab_title {
                 fontSize = 11
                 offset = 20, 15
                 fontColor = #666666
-                fontFile = fileadmin/templates/fonts/freeset_cyr.ttf
+                fontFile = EXT:tmpl/Resources/Public/Fonts/freeset_cyr.ttf
             }
 
             20 = TEXT
@@ -27,7 +27,7 @@ lib.tab_title {
                 fontSize = 11
                 offset = 20, 62
                 fontColor = #D90007
-                fontFile = fileadmin/templates/fonts/freeset_cyr.ttf
+                fontFile = EXT:tmpl/Resources/Public/Fonts/freeset_cyr.ttf
             }
 
             #      30 = IMAGE
