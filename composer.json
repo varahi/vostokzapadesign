@@ -39,8 +39,9 @@
 		"helhum/config-loader": "0.9",
 		"helhum/dotenv-connector": "^2.1",
 		"helhum/typo3-console": "^5.5",
-		"in2code/powermail": "^7.1",
+		"in2code/powermail": "^7.4",
 		"lavitto/typo3-fancybox": "^1.0",
+		"laxap/bootstrap-grids": "^2.0",
 		"lochmueller/sourceopt": "dev-master",
 		"netresearch/rte-ckeditor-image": "dev-dev-TYPO3_9.x",
 		"sgalinski/lfeditor": "^5.0",
@@ -48,6 +49,8 @@
 		"t3dev/t3devcarousel": "^1.0",
 		"t3dev/tmpl": "^1.0",
 		"typo3-console/composer-auto-commands": "^0.2.0",
+		"typo3-ter/gridelements": "^9.4",
+		"typo3-ter/typoscript-code": "^6.1",
 		"typo3/cms-about": "^9.5",
 		"typo3/cms-adminpanel": "^9.5",
 		"typo3/cms-backend": "^9.5",
@@ -78,9 +81,7 @@
 		"typo3/cms-t3editor": "^9.5",
 		"typo3/cms-tstemplate": "^9.5",
 		"typo3/cms-viewpage": "^9.5",
-		"typo3/minimal": "^9.5",
-		"typo3-ter/gridelements": "^9.4",
-		"laxap/bootstrap-grids": "^2.0"
+		"typo3/minimal": "^9.5"
 	},
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "2.14.0",

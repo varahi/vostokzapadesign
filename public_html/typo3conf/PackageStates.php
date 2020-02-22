@@ -98,14 +98,17 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'gridelements' => [
+            'packagePath' => 'typo3conf/ext/gridelements/',
+        ],
+        'bootstrap_grids' => [
+            'packagePath' => 'typo3conf/ext/bootstrap_grids/',
+        ],
         'rte_ckeditor_image' => [
             'packagePath' => 'typo3conf/ext/rte_ckeditor_image/',
         ],
         'fancybox' => [
             'packagePath' => 'typo3conf/ext/fancybox/',
-        ],
-        'gridelements' => [
-            'packagePath' => 'typo3conf/ext/gridelements/',
         ],
         'lfeditor' => [
             'packagePath' => 'typo3conf/ext/lfeditor/',
@@ -125,8 +128,14 @@ return [
         'tmpl' => [
             'packagePath' => 'typo3conf/ext/tmpl/',
         ],
+        'typoscript_code' => [
+            'packagePath' => 'typo3conf/ext/typoscript_code/',
+        ],
         'vhs' => [
             'packagePath' => 'typo3conf/ext/vhs/',
+        ],
+        'ws_scss' => [
+            'packagePath' => 'typo3conf/ext/ws_scss/',
         ],
     ],
     'version' => 5,
