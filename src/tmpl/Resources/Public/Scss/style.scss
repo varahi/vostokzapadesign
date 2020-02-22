@@ -181,7 +181,22 @@ a.link-back,  p.back-to-list a {
   display: block;
   color: $light-gray;
 }
+
+/* News pagination
+-------------------------------------------------- */
   
+ul.f3-widget-paginator {
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 3px !important;
+  }
+}
+.page-navigation {
+  p {
+    display: none;
+  }
+}
 
 /* Row Images
 -------------------------------------------------- */

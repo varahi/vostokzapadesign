@@ -139,6 +139,15 @@ a.link-back, p.back-to-list a {
   margin: 5px 0 2px 0;
   display: block;
   color: #a7a9ac; }
+/* News pagination
+ -------------------------------------------------- */
+ul.f3-widget-paginator li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 3px !important; }
+
+.page-navigation p {
+  display: none; }
 /* Row Images
  -------------------------------------------------- */
 .row-images-list .csc-textpic-image img {
