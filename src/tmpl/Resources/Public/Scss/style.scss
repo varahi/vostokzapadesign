@@ -186,10 +186,17 @@ a.link-back,  p.back-to-list a {
 -------------------------------------------------- */
   
 ul.f3-widget-paginator {
+  font-size: 16px;
   li {
     list-style: none;
     display: inline-block;
-    padding: 0 3px !important;
+    padding: 0 7px !important;
+  }
+  li.current {
+    margin-top: 2px !important;
+    padding: 1px 7px;
+    background: #A7A9AC !important;
+    color: #FFFFFF;
   }
 }
 .page-navigation {
@@ -197,6 +204,8 @@ ul.f3-widget-paginator {
     display: none;
   }
 }
+
+
 
 /* Row Images
 -------------------------------------------------- */

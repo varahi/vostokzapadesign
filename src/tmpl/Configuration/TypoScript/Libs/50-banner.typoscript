@@ -38,14 +38,36 @@ lib.banner {
                 #Old parameter
                 #fontSize = 19
             } # 20
-
         } # file
-
     } # 20
 
 } # lib.banner
 
-
+[27 in tree.rootLineIds]
+    lib.banner.20 >
+    lib.banner {
+        20 = IMAGE
+        20 {
+            params = class="image-caption"
+            altText.data = page:title
+            file = GIFBUILDER
+            file {
+                XY = [20.w]+58,60
+                10 = BOX
+                10.dimensions = 0,0,[20.w]+58,60
+                10.color = #666666
+                20 = TEXT
+                20 {
+                    text = {$config.page.schoolNews}
+                    offset = 29,37
+                    fontColor = #ffffff
+                    fontFile = EXT:tmpl/Resources/Public/Fonts/freeset_cyr.ttf
+                    fontSize = 26
+                }
+            }
+        }
+    }
+[global]
 
 [treeLevel = 0]
     lib.banner.20 >

@@ -141,10 +141,17 @@ a.link-back, p.back-to-list a {
   color: #a7a9ac; }
 /* News pagination
  -------------------------------------------------- */
-ul.f3-widget-paginator li {
-  list-style: none;
-  display: inline-block;
-  padding: 0 3px !important; }
+ul.f3-widget-paginator {
+  font-size: 16px; }
+  ul.f3-widget-paginator li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 7px !important; }
+  ul.f3-widget-paginator li.current {
+    margin-top: 2px !important;
+    padding: 1px 7px;
+    background: #a7a9ac !important;
+    color: #fff; }
 
 .page-navigation p {
   display: none; }
