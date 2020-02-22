@@ -17,3 +17,9 @@ lib.content.right {
 
     # 999 = RESTORE_REGISTER
 }
+
+[getTSFE().type == 310]
+    lib.content.right >
+    lib.content.right = TEXT
+    lib.content.right.value =
+[global]
