@@ -41,7 +41,7 @@
 		"helhum/typo3-console": "^5.5",
 		"in2code/powermail": "^7.4",
 		"lavitto/typo3-fancybox": "^1.0",
-		"laxap/bootstrap-grids": "^2.0",
+		"laxap/bootstrap-grids": "^1.4",
 		"lochmueller/sourceopt": "dev-master",
 		"netresearch/rte-ckeditor-image": "dev-dev-TYPO3_9.x",
 		"sgalinski/lfeditor": "^5.0",
