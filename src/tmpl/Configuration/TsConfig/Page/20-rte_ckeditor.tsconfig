@@ -1,3 +1,4 @@
+/*
 RTE {
     default.preset = default
     config {
@@ -8,3 +9,4 @@ RTE {
         tx_news_domain_model_news.bodytext.preset = custom
     }
 }
+*/

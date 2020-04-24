@@ -1,4 +1,4 @@
-base: 'http://vostokzapadesign.ru/'
+base: 'https://vostokzapadesign.ru/'
 baseVariants:
   -
     base: 'http://dev-v9.vostokzapadesign.ru/'
