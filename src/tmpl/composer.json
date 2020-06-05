@@ -1,0 +1,29 @@
+{
+  "name": "t3dev/tmpl",
+  "type": "typo3-cms-extension",
+  "description": "Site template",
+  "authors": [
+    {
+      "name": "Dmitry Vasilev",
+      "role": "Developer"
+    }
+  ],
+  "version": "1.0.0",
+  "require": {
+    "typo3/cms-core": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "T3Dev\\Tmpl\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "T3Dev\\Tmpl\\Tests\\": "Tests"
+    }
+  },
+  "replace": {
+    "tmpl": "self.version",
+    "typo3-ter/tmpl": "self.version"
+  }
+}

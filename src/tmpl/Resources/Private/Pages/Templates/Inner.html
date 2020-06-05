@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+			xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+			xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+			xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+			data-namespace-typo3-fluid="true">
+
+
+<f:layout name="default" />
+
+<f:section name="content">
+	<div class="row">
+		<div class="right-column col-lg-8 push-lg-4">
+			<f:cObject typoscriptObjectPath="lib.calendarLink" />
+			{content_right -> f:format.raw()}
+			<f:cObject typoscriptObjectPath="lib.content.right" />
+		</div>
+		<div class="left-column col-lg-4 pull-lg-8">
+			<f:cObject typoscriptObjectPath="lib.navigation.submenu" />
+			{content_left -> f:format.raw()}
+		</div>
+	</div>
+</f:section>

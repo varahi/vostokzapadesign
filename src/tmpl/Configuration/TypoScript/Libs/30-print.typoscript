@@ -1,0 +1,6 @@
+lib.print = COA
+lib.print {
+    100 = TEXT
+    100.value = <a href="javascript:window.print();">Версия для печати</a>
+    100.wrap = <p class="align-right">|</p>
+}

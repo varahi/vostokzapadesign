@@ -1,0 +1,62 @@
+base: 'https://vostokzapadesign.ru/'
+baseVariants:
+  -
+    base: 'http://dev-v9.vostokzapadesign.ru/'
+    condition: 'getenv("HOST_ENV") == "serverdev"'
+  -
+    base: 'https://vostokzapadesign.localhost/'
+    condition: 'getenv("HOST_ENV") == "localdev"'
+errorHandling:
+  -
+    errorCode: '404'
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=382'
+languages:
+  -
+    title: Russia
+    enabled: true
+    base: /
+    typo3Language: ru
+    locale: ru_RU.UTF-8
+    iso-639-1: ru
+    navigationTitle: ''
+    hreflang: ''
+    direction: ''
+    flag: ru
+    languageId: '0'
+rootPageId: 1
+routeEnhancers:
+  NewsPlugin:
+    type: Extbase
+    extension: News
+    plugin: Pi1
+    routes:
+      -
+        routePath: '/detail/{news_title}'
+        _controller: 'News::detail'
+        _arguments:
+          news_title: news
+      -
+        routePath: '/list/{page}'
+        _controller: 'News::list'
+        _arguments:
+          page: '@widget_0/currentPage'
+    defaultController: 'News::list'
+    defaults:
+      page: '0'
+    requirements:
+      page: \d+
+    aspects:
+      news_title:
+        type: PersistedAliasMapper
+        tableName: tx_news_domain_model_news
+        routeFieldName: path_segment
+      page:
+        type: StaticRangeMapper
+        start: '1'
+        end: '100'
+routes:
+  -
+    route: sitemap.xml
+    type: uri
+    source: 't3://page?uid=1&type=1533906435'
