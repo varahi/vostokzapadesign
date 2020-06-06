@@ -11,3 +11,15 @@
 .news-single .news-img-wrap {
 
 }
+/*
+a#nav-icon {
+	border: 1px solid red !important;
+	position: fixed;
+	z-index: 9999;
+	top: 10px;
+	right: 20px;
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+*/

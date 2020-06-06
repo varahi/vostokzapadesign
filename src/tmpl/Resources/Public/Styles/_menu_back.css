@@ -44,12 +44,12 @@ img.image-responsive {
 -------------------------------------------------- */
 .sm-clean {
 	padding: 0;
-    background: transparent;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0;
+  background: transparent;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
 }
 ul#main-menu {
 	padding: 0;
@@ -67,6 +67,7 @@ span.sub-arrow {
 	display: none;
 }
 .sm-clean a.has-submenu {
+	/*padding-right: 24px;*/
 	padding-right: 0;
 }
 
@@ -98,9 +99,10 @@ ul.sm-clean li.active a {
 #nav-icon {
   width: 40px;
   height: 40px;
+  display: block;
   position: fixed;
-  top: 10px;
-  right: 20px;
+  top: 20px;
+  right: 30px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -119,7 +121,7 @@ ul.sm-clean li.active a {
   height: 6px;
   width: 100%;
   background: #000;
-  border-radius: 0;
+  border-radius: 0px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -135,7 +137,7 @@ ul.sm-clean li.active a {
 /* Icon */
 /* To Do: set burger icon for class .mm-menu_opened */
 #nav-icon span:nth-child(1) {
-  top: 0;
+  top: 0px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -172,9 +174,10 @@ ul.sm-clean li.active a {
 -------------------------------------------------- */
 
 .mm-opening #nav-icon span:nth-child(2) {
-    width: 0;
+    width: 0%;
     opacity: 0;
 }
+
 .mm-opening #nav-icon span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -182,6 +185,73 @@ ul.sm-clean li.active a {
     transform: rotate(-45deg);
     top: 26px;
     left: 8px;
+}
+
+.mm-tabstart,
+.mm-sronly {
+	display: none;
+}
+
+.mm-title {
+ 	font-family: Trebuchet MS;
+ 	font-size: 26px;
+}
+.mm-menu .mm-navbar a, .mm-menu .mm-navbar > * {
+ 	color: #333;
+}
+.mm-listview {
+ 	font-family: Trebuchet MS;
+ 	font-size: 24px;
+ 	line-height: 30px;
+ 	color: #333;
+}
+.mm-listview li:HOVER {
+	color: #d90007;
+}
+.mm-counter {
+	display: none !important;
+}
+.mm-navbar-top {
+	height: 60px;
+	padding-top: 10px !important;
+}
+.mm-hasnavbar-top-1 .mm-panels,
+.mm-navbar-top-2 {
+    top: 60px;
+}
+.mm-navbar .mm-btn:first-child {
+	left: 0;
+	top: 10px;
+}
+
+.mm-listview .mm-next::before,
+.mm-navbar-bottom {
+	border: none;
+}
+
+.mm-hasnavbar-bottom-1 .mm-panels,
+.mm-navbar-bottom-2 {
+   bottom: 10px;
+}
+
+/*
+.mm-navbar-bottom {
+	height: 0px;
+	margin-top: -30px;
+}
+*/
+/*
+.mm-navbar.mm-hasbtns {
+	padding: 40px 40px;
+}*/
+
+
+/* Traingle for mmenu */
+.mm-menu .mm-listview > li .mm-next::after {
+	border-color: #333;
+}
+.mm-menu .mm-btn::after, .mm-menu .mm-btn::before {
+	border-color: #333;
 }
 .mm-next::after, .mm-prev::before {
  border-top: 2px solid transparent;
@@ -196,5 +266,47 @@ ul.sm-clean li.active a {
 a.mm-close {
 	display: none;
 }
+
+/*
+#menu {
+	display: none;
+}*/
+
+/*
+.mm-panels > .mm-panel::after, .mm-panels > .mm-panel::before {
+ content: '';
+ display: block;
+ height: 0px;
+}*/
+
+/*.mm-hasnavbar-bottom-1 .mm-panels,
+.mm-navbar-bottom-2 {
+	bottom: 10px;
+}*/
+
+
+
+/*
+.left-menu li ul {
+	list-style: none;
+	margin: 5px 0;
+	padding: 0 0 0 10px;
+}
+.left-menu li ul li a {
+	line-height: 20px;
+	background: url(../Images/icons/ico-gt-lgrey.gif) left 7px no-repeat;
+}
+.left-menu li ul li a:hover {
+	background: url(../Images/icons/ico-gt-red.gif) left 7px no-repeat;
+}
+.left-menu li ul li.active a {
+	color: #333333;
+	text-decoration: none;
+	background: url(../Images/icons/ico-gt-red.gif) left 7px no-repeat;
+}
+.left-menu li ul li.active a:hover {
+	text-decoration: underline;
+}
+*/
 
 
