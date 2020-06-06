@@ -12,7 +12,7 @@
 
 	<div class="col-md-4">
 		<div class="news-image">
-			<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+			<!-- <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}"> -->
 
 				<f:if condition="{newsItem.mediaPreviews}">
 					<!-- media preview element -->
@@ -36,17 +36,18 @@
 					<f:else>
 						<f:if condition="{settings.displayDummyIfNoMedia}">
 							<div class="news-img-wrap">
-					<span class="no-media-element">
-						<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
-							<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}"/>
-						</n:link>
-					</span>
+								<span class="no-media-element">
+									<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+										<f:image src="{settings.list.media.dummyImage}" title="" alt=""
+												 maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}"/>
+										</n:link>
+								</span>
 							</div>
 						</f:if>
 					</f:else>
 				</f:if>
 
-			</n:link>
+			<!-- </n:link> -->
 		</div>
 	</div>
 	<div class="col-md-8">

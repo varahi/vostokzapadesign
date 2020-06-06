@@ -40,8 +40,6 @@ img.image-responsive {
 	display: none !important;
 }
 
-
-
 /* Main menu
 -------------------------------------------------- */
 .sm-clean {
@@ -94,7 +92,6 @@ ul.sm-clean li.active a {
 	color: #d90007;
 }
 
-
 /* Mmmenu navbar icon
 -------------------------------------------------- */
 
@@ -138,7 +135,7 @@ ul.sm-clean li.active a {
 }
 
 /* Icon */
-
+/* To Do: set burger icon for class .mm-menu_opened */
 #nav-icon span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
@@ -164,12 +161,12 @@ ul.sm-clean li.active a {
 }
 
 .mm-opening #nav-icon span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: -3px;
-  left: 8px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
 }
 
 
@@ -177,17 +174,17 @@ ul.sm-clean li.active a {
 -------------------------------------------------- */
 
 .mm-opening #nav-icon span:nth-child(2) {
-  width: 0%;
-  opacity: 0;
+    width: 0%;
+    opacity: 0;
 }
 
 .mm-opening #nav-icon span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 26px;
-  left: 8px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 26px;
+    left: 8px;
 }
 
 .mm-tabstart,
@@ -214,16 +211,11 @@ ul.sm-clean li.active a {
 .mm-counter {
 	display: none !important;
 }
-/*
-.mm-navbar.mm-hasbtns {
-	padding: 40px 40px;	
-}*/
-
 .mm-navbar-top {
-	height: 60px;	
+	height: 60px;
 	padding-top: 10px !important;
 }
-.mm-hasnavbar-top-1 .mm-panels, 
+.mm-hasnavbar-top-1 .mm-panels,
 .mm-navbar-top-2 {
     top: 60px;
 }
@@ -236,16 +228,23 @@ ul.sm-clean li.active a {
 .mm-navbar-bottom {
 	border: none;
 }
+
+.mm-hasnavbar-bottom-1 .mm-panels,
+.mm-navbar-bottom-2 {
+   bottom: 10px;
+}
+
 /*
 .mm-navbar-bottom {
 	height: 0px;
 	margin-top: -30px;
 }
 */
-.mm-hasnavbar-bottom-1 .mm-panels, 
-.mm-navbar-bottom-2 {
-   bottom: 10px;
-}
+/*
+.mm-navbar.mm-hasbtns {
+	padding: 40px 40px;
+}*/
+
 
 /* Traingle for mmenu */
 .mm-menu .mm-listview > li .mm-next::after {
@@ -280,7 +279,7 @@ a.mm-close {
  height: 0px;
 }*/
 
-/*.mm-hasnavbar-bottom-1 .mm-panels, 
+/*.mm-hasnavbar-bottom-1 .mm-panels,
 .mm-navbar-bottom-2 {
 	bottom: 10px;
 }*/
@@ -288,25 +287,25 @@ a.mm-close {
 
 
 /*
-.left-menu li ul { 
-	list-style: none; 
-	margin: 5px 0; 
-	padding: 0 0 0 10px; 
+.left-menu li ul {
+	list-style: none;
+	margin: 5px 0;
+	padding: 0 0 0 10px;
 }
-.left-menu li ul li a { 
-	line-height: 20px; 
-	background: url(../Images/icons/ico-gt-lgrey.gif) left 7px no-repeat; 
+.left-menu li ul li a {
+	line-height: 20px;
+	background: url(../Images/icons/ico-gt-lgrey.gif) left 7px no-repeat;
 }
-.left-menu li ul li a:hover { 
-	background: url(../Images/icons/ico-gt-red.gif) left 7px no-repeat; 
+.left-menu li ul li a:hover {
+	background: url(../Images/icons/ico-gt-red.gif) left 7px no-repeat;
 }
-.left-menu li ul li.active a { 
-	color: #333333; 
-	text-decoration: none; 
-	background: url(../Images/icons/ico-gt-red.gif) left 7px no-repeat; 
+.left-menu li ul li.active a {
+	color: #333333;
+	text-decoration: none;
+	background: url(../Images/icons/ico-gt-red.gif) left 7px no-repeat;
 }
-.left-menu li ul li.active a:hover { 
-	text-decoration: underline; 
+.left-menu li ul li.active a:hover {
+	text-decoration: underline;
 }
 */
 

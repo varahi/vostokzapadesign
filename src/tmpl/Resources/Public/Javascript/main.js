@@ -17,6 +17,7 @@ $(document).ready(function() {
 	//});
 	
 	// Mmenu
+	/*
 	$('nav#menu').mmenu({
 		extensions				: [ 'popup' ],
 		keyboardNavigation 		: true,
@@ -41,9 +42,9 @@ $(document).ready(function() {
 			}
 		]
 	});
+	*/
+
 });
-
-
 
 
 //$('.content').html( $('.content').html().split('&nbsp').join('') );
