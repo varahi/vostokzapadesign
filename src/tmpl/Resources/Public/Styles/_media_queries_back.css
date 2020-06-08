@@ -1,0 +1,401 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	body {
+		background: #D1D2D4 url(../Images/bg/bg_decoration_1.gif) 960px 51px no-repeat;
+	}
+	.main,
+	.footer {
+		max-width: 960px;
+	}
+	ul.sm-clean a,
+	ul.sm-clean a.has-submenu,
+	ul.sm-clean a:hover {
+		padding: 5px 18px 15px 17px;
+	}
+	ul.sm-clean li.last-item a {
+		padding-right: 16px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.container-inner,
+	.footer {
+		margin: 0;
+		border-left: 0;
+	}
+	#bg {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 991px) {
+	.header__phone {
+		text-align: center;
+		font-size: 32px;
+		padding-top: 10px;
+		padding-left: 20px;
+	}
+	.header__map-link {
+		text-align: center;
+		font-size: 24px;
+		padding-top: 20px;
+	}
+	.header {
+		margin-bottom: 30px;
+	}
+
+	ul.sm-clean a,
+	ul.sm-clean a.has-submenu,
+	ul.sm-clean a:hover {
+		padding: 5px 20px 15px 20px;
+		font-size: 12px;
+	}
+
+	.navbar {
+		display: none;
+	}
+	#nav-icon {
+		display: block !important;
+	}
+	.mm-listview li {
+		height: auto;
+	}
+	.mm-listview .mm-divider, .mm-listview > li > a, .mm-listview > li > span, .mm-navbar .mm-title {
+		white-space: normal;
+	}
+
+
+	/*
+	.mm-menu.mm-popup {
+		position: absolute;
+		top: 350px;
+		width: 100% !important;
+		border: 1px solid red;
+		margin-right: 30% !important;
+	}
+	*/
+	.mm-menu.mm-offcanvas {
+		z-index: 0;
+		display: none;
+		position: fixed;
+		width: 90%;
+		min-width: 140px;
+		max-width: 800px;
+		right: 300px;
+	}
+	.mm-menu {
+		background: #f3f3f3;
+		border-color: rgba(0,0,0,.1);
+		color: rgba(0,0,0,.75);
+	}
+	#mm-blocker  {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		background: transparent url(../Images/bg-mmenu.png) 0 0 repeat;
+		opacity: 0.5;
+	}
+	.left-menu {
+		display: none;
+	}
+	/*
+	.left-column {
+		border-top: 1px dotted #ccc;
+		border-right: none;
+	}	*/
+	.right-column {
+		border-left: none;
+	}
+	.hidden-sm {
+		display: none;
+	}
+	.gallery__item {
+		min-height: 250px;
+	}
+
+}
+
+@media only screen and (max-width : 868px) {
+	ul.sm-clean a,
+	ul.sm-clean a.has-submenu,
+	ul.sm-clean a:hover {
+		padding: 5px 10px 15px 10px;
+		font-size: 12px;
+	}
+	.header__phone {
+		text-align: center;
+		font-size: 28px;
+		padding-top: 10px;
+		padding-left: 25px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	body {
+		font-size: 1rem;
+	}
+	.content p {
+		line-height: 1.2rem;
+	}
+	/* Typography */
+	.content h1 {
+		font-size: 28px;
+	}
+	.container-inner,
+	.footer {
+		border-right: 0;
+	}
+	.header {
+		width: 250px;
+		margin: 0 auto;
+	}
+	#navbar-header in {
+		border: 1px solid red;
+	}
+	.header__phone {
+		font-size: 1.8rem;
+		text-align: center;
+		margin: 12px 0 0 0;
+		padding-left: 0px;
+	}
+	.header__map-link {
+		font-size: 1.4rem;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.container-inner,
+	.footer {
+		border-right: 10px solid #d1d2d4;
+		border-left: 10px solid #d1d2d4;
+		padding: 0 10px;
+	}
+	.banner {
+		float: none;
+		max-width: 100%;
+		/*		min-height: 130px;*/
+		height: auto !important;
+		padding: 1px 0 12px 20px;
+		background-position: 100% 50%;
+	}
+	.course-block ul {
+		padding: 0;
+	}
+	.course-block,
+	.course-block ul li,
+	.course-block ul li span {
+		font-size: 1rem !important;
+	}
+	.course-block__description {
+		padding-top: 10px;
+	}
+	.course-block__description h2 {
+		text-align: center;
+		font-size: 18px;
+	}
+	.tx-powermail {
+		font-size: 14px !important;
+	}
+	.tx-powermail input[type="text"],
+	.tx-powermail input[type="email"],
+	.tx-powermail textarea {
+		border: 1px solid #a9a9a9 !important;
+	}
+	span.select-after {
+		display: none;
+	}
+	.footer {
+	}
+	.footer__right,
+	.footer__menu {
+		margin-left: 0;
+	}
+	.footer__left {
+		text-align: center;
+	}
+	.footer__left a,
+	.footer__left p,
+	.footer__left h3 {
+		font-size: 1.6rem !important;
+		color: #333;
+	}
+	.footer__menu {
+		display: none;
+	}
+	.copyright,
+	.developer {
+		font-size: 1.1rem;
+		width: 290px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.copyright {
+		margin-top: 10px;
+	}
+	.developer {
+		margin-bottom: 40px;
+	}
+	div.master div.description {
+		margin: 0;
+	}
+	.news-item-row h3 {
+		margin: 15px 0;
+		font-size: 22px;
+	}
+	.gallery {
+		margin: 0;
+	}
+	.gallery__item {
+		width: 48%;
+		margin-bottom: 30px;
+	}
+	.gallery__item-caption {
+		margin-top: 10px;
+	}
+	img.image-caption {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		max-height: 60px;
+	}
+	span.mob-no-wrap {
+		display: block;
+		white-space: nowrap;
+	}
+	#menu {
+		display: block;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.tx-powermail form input.input-text {
+		width: auto;
+	}
+	.gallery {
+		margin: 0;
+	}
+	.gallery__item {
+		width: 100%;
+		margin-bottom: 30px;
+		float: none;
+		min-height: auto;
+	}
+	.gallery__item-caption {
+		margin-top: 10px;
+	}	
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	.tx-powermail form label {
+		float: none;
+		width: 200px;
+		font-size: 12px;
+	}		
+	
+	.powermail_field {
+		width: 100% !important;	
+	}
+	.input-text {
+		width: 80% !important;
+	}
+
+}
+
+@media only screen and (max-width : 420px) {
+	.navbar-toggler {
+		float: right;
+		margin-right: -20px;
+		margin-top: -190px;
+	}	
+	.tx-powermail form label {
+		text-align: left;
+		margin-top: 10px;
+	}
+	.input-submit {
+		position: absolute;
+		left: 50px;
+	}
+	table {
+		font-size: 12px;
+	}
+	.right-column {
+		padding-left: 10px;
+	}
+	.copyright, .developer {
+		width: auto;
+	}
+	.tx-powermail form input.input-submit {
+		margin-top: 10px;
+		margin-left: -20px;
+	}
+	.tx-powermail form fieldset {
+    background: #F0F1F2;
+    padding: 10px;
+    width: auto;
+    border: 0 none;
+	}	
+}
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+	.powermail_form {
+	}
+	.powermail_fieldset,
+	.powermail_fieldwrap,
+	.powermail_label {
+		max-width: 260px !important;
+	}
+
+	/*
+	.tx-powermail form fieldset {
+		width: 200px !important;
+		margin-left: -20px;
+		padding-left: 30px;
+	}   
+*/   
+}

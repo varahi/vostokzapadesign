@@ -1,0 +1,77 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/List/RowItem.html
+-->
+
+<div class="news-item-row row">
+
+	<n:excludeDisplayedNews newsItem="{newsItem}"/>
+
+	<div class="col-md-4">
+		<div class="news-image">
+			<!-- <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}"> -->
+
+				<f:if condition="{newsItem.mediaPreviews}">
+					<!-- media preview element -->
+					<f:then>
+						<div class="news-img-wrap">
+							<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+								<f:alias map="{mediaElement: '{newsItem.mediaPreviews.0}'}">
+									<f:if condition="{mediaElement.originalResource.type} == 2">
+										<f:image image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}"/>
+									</f:if>
+									<f:if condition="{mediaElement.originalResource.type} == 4">
+										<f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement}"/>
+									</f:if>
+									<f:if condition="{mediaElement.originalResource.type} == 5">
+										<f:image image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}"/>
+									</f:if>
+								</f:alias>
+							</n:link>
+						</div>
+					</f:then>
+					<f:else>
+						<f:if condition="{settings.displayDummyIfNoMedia}">
+							<div class="news-img-wrap">
+								<span class="no-media-element">
+									<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+										<f:image src="{settings.list.media.dummyImage}" title="" alt=""
+												 maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}"/>
+										</n:link>
+								</span>
+							</div>
+						</f:if>
+					</f:else>
+				</f:if>
+
+			<!-- </n:link> -->
+		</div>
+	</div>
+	<div class="col-md-8">
+		<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+		<h3><span itemprop="headline">{newsItem.title}</span></h3>
+		</n:link>
+		<span class="lightgrey">
+				<time itemprop="datePublished" datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
+					<f:format.date format="{f:translate(key:'dateFormat', extensionName:'tmpl')}">{newsItem.datetime}</f:format.date>
+				</time>
+			</span>
+
+		<n:removeMediaTags>
+			<f:if condition="{newsItem.teaser}">
+				<f:then>
+					<p itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.stripTags()}</p>
+				</f:then>
+				<f:else>
+					<p itemprop="description">{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.stripTags()}</p>
+				</f:else>
+			</f:if>
+		</n:removeMediaTags>
+
+	</div>
+</div>
+
+</html>

@@ -1,0 +1,55 @@
+page {
+
+    # Css
+    includeCSS {
+        # Sm menu, using in desktop
+        css_file11 = EXT:tmpl/Resources/Public/Styles/sm-core-css.css
+        css_file12 = EXT:tmpl/Resources/Public/Styles/sm-clean/sm-clean.css
+
+        # Mobile mmnenu
+        #css_file15 = EXT:tmpl/Resources/Public/Styles/jquery.mmenu.all.css
+        css_file15 = EXT:tmpl/Resources/Public/Styles/mmenu/mmenu.css
+
+        #css_file20 = EXT:tmpl/Resources/Public/Styles/mailform.css
+        #css_file20.media = all
+        css_file21 = EXT:tmpl/Resources/Public/Styles/print.css
+        css_file21.media = print
+    }
+
+    # Scss
+    includeCSS {
+        # Bootstrap scss
+        css_file5_bootstrap = EXT:tmpl/Resources/Public/Scss/bootstrap/bootstrap.scss
+        css_file5_bootstrap.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
+
+        # Main style scss
+        css_file100_style = EXT:tmpl/Resources/Public/Scss/style.scss
+        css_file100_style.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
+
+        # Css
+        css_file99 = EXT:tmpl/Resources/Public/Styles/mailform.css
+        css_file101 = EXT:tmpl/Resources/Public/Styles/style.css
+        css_file102 = EXT:tmpl/Resources/Public/Styles/menu.css
+        css_file103 = EXT:tmpl/Resources/Public/Styles/media_queries.css
+        200_custom_css = EXT:tmpl/Resources/Public/Styles/custom.css
+    }
+
+    # Js to header
+    includeJSLibs {
+        10_jquery = EXT:tmpl/Resources/Public/Javascript/jquery/jquery.min.js
+    }
+
+    #Js to footer
+    includeJSFooter {
+        # Mobile mmnenu
+        #js_file10 = EXT:tmpl/Resources/Public/Javascript/jquery.mmenu.all.min.js
+        js_file10 = EXT:tmpl/Resources/Public/Javascript/mmenu/mmenu.js
+        js_file11 = EXT:tmpl/Resources/Public/Javascript/main.js
+    }
+}
+
+/*
+page.footerData.999 = TEXT
+page.footerData.999.value (
+)
+*/

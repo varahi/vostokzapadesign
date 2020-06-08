@@ -1,73 +1,118 @@
 {
-	"repositories" : [{
-			"type" : "composer",
-			"url" : "https://composer.typo3.org/"
+	"name": "t3dev/vostokzapaddesign",
+	"description": "Vostokzapaddesign",
+	"type": "project",
+	"license": "GPL-3.0+",
+	"authors": [
+		{
+			"name": "Dmitry Vasilev",
+			"email": "dmitry@t3dev.ru"
 		}
 	],
-	"name" : "typo3/cms-base-distribution",
-	"description" : "Vostokzapad Design",
-	"type": "project",
-    "authors": [
-      {
-        "name": "Dmitry Vasilev",
-        "email": "info@t3dev.ru"
-      }
-  ],
-	"license" : "GPL-2.0+",
-	"require" : {
-		"typo3/cms": "^8",
-		"helhum/typo3-console": "^5.2",
-		"helhum/dotenv-connector": "^2",
-		"helhum/config-loader": "^0.8",
-		"typo3-ter/realurl" : "^2.5",
-		"typo3-ter/sourceopt" : "^1.0",
-		"typo3-ter/gridelements": "^8.6",
-		"clickstorm/cs_seo": "^2.3",
-		"fluidtypo3/vhs": "^3.1",
+	"repositories": [
+		{
+			"type": "path",
+			"url": "src/*",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "composer",
+			"url": "https://composer.typo3.org/"
+		}
+	],
+	"config": {
+		"platform": {
+			"php": "7.2"
+		},
+		"sort-packages": true
+	},
+	"require": {
+		"configloader/configloader": "^9.5",
+		"consolidation/robo": "^1",
+		"cweagans/composer-patches": "^1.6",
+		"deployer/deployer": "^6",
+		"fluidtypo3/vhs": "^5.2",
+		"georgringer/news": "^7.3",
+		"gridelementsteam/gridelements": "^9.2",
+		"helhum/config-loader": "0.9",
+		"helhum/dotenv-connector": "^2.1",
+		"helhum/typo3-console": "^5.5",
+		"in2code/powermail": "^7.4",
+		"lavitto/typo3-fancybox": "^1.0",
 		"laxap/bootstrap-grids": "^1.4",
-		"fluidtypo3/fluidcontent": "^5.2",
-		"fluidtypo3/fluidpages": "^4.1",
-		"fluidtypo3/flux": "^8.2.1",
-		"sgalinski/lfeditor": "^5.1",
-		"koninklijke-collective/my-redirects": "^3.4",
-		"georgringer/news": "^6.3",
-		"in2code/powermail": "^4.4",
-		"dmitryd/typo3-realurl": "^2.5",
-		"lochmueller/sourceopt": "^1.0",
-		"sjbr/static-info-tables": "^6.5",
-		"svewap/ws-scss": "^1.1.7",
-		"georgringer/news-fal-migration": "^1.0",
-		"beechit/news-ttnewsimport": "^2.0",
-		"friendsoftypo3/compatibility7": "^8.7",
-		"lavitto/typo3-fancybox": "^1.0"
+		"lochmueller/sourceopt": "dev-master",
+		"netresearch/rte-ckeditor-image": "dev-dev-TYPO3_9.x",
+		"sgalinski/lfeditor": "^5.0",
+		"svewap/ws-scss": "^1.1",
+		"t3dev/t3devcarousel": "^1.0",
+		"t3dev/tmpl": "^1.0",
+		"typo3-console/composer-auto-commands": "^0.2.0",
+		"typo3-ter/gridelements": "^9.4",
+		"typo3-ter/typoscript-code": "^6.1",
+		"typo3/cms-about": "^9.5",
+		"typo3/cms-adminpanel": "^9.5",
+		"typo3/cms-backend": "^9.5",
+		"typo3/cms-belog": "^9.5",
+		"typo3/cms-beuser": "^9.5",
+		"typo3/cms-core": "^9.5",
+		"typo3/cms-extbase": "^9.5",
+		"typo3/cms-extensionmanager": "^9.5",
+		"typo3/cms-felogin": "^9.5",
+		"typo3/cms-filelist": "^9.5",
+		"typo3/cms-fluid": "^9.5",
+		"typo3/cms-fluid-styled-content": "^9.5",
+		"typo3/cms-form": "^9.5",
+		"typo3/cms-frontend": "^9.5",
+		"typo3/cms-impexp": "^9.5",
+		"typo3/cms-info": "^9.5",
+		"typo3/cms-install": "^9.5",
+		"typo3/cms-linkvalidator": "^9.5",
+		"typo3/cms-lowlevel": "^9.5",
+		"typo3/cms-recordlist": "^9.5",
+		"typo3/cms-redirects": "^9.5",
+		"typo3/cms-reports": "^9.5",
+		"typo3/cms-rte-ckeditor": "^9.5",
+		"typo3/cms-scheduler": "^9.5",
+		"typo3/cms-seo": "^9.5",
+		"typo3/cms-setup": "^9.5",
+		"typo3/cms-sys-note": "^9.5",
+		"typo3/cms-t3editor": "^9.5",
+		"typo3/cms-tstemplate": "^9.5",
+		"typo3/cms-viewpage": "^9.5",
+		"typo3/minimal": "^9.5"
 	},
 	"require-dev": {
-		"deployer/deployer": "^6",
-		"consolidation/robo": "^1",
-		"devlog/devlog": "^3",
-		"sgalinski/lfeditor": "^5.1"
+		"friendsofphp/php-cs-fixer": "2.14.0",
+		"helmich/typo3-typoscript-lint": "1.4.7",
+		"phpmd/phpmd": "2.6.0",
+		"phpstan/phpstan": "0.11.1",
+		"squizlabs/php_codesniffer": "^3.4.0",
+		"typo3-console/php-server-command": "0.2.2",
+		"typo3/testing-framework": "4.11.2"
 	},
-	"autoload": {
-		"psr-4": {
-			"T3Dev\\Tmpl\\" : "public_html/typo3conf/ext/tmpl/Classes",
-			"T3Dev\\TmplMigration\\" : "public_html/typo3conf/ext/tmpl_migration/Classes",
-			"Nwt\\Imagecrop\\" : "public_html/typo3conf/ext/nwt_imagecrop/Classes",
-			"Itribe\\TyposcriptCode\\" : "public_html/typo3conf/ext/typoscript_code/Classes",
-			"RENOLIT\\NewsFalttnewsimport\\" : "public_html/typo3conf/ext/news_falttnewsimport/Classes",
-			"T3Dev\\T3devcarousel\\" : "public_html/typo3conf/ext/t3devcarousel/Classes",
-			"WMDB\\TtNews\\" : "public_html/typo3conf/ext/tt_news/Classes"
-		}
+	"scripts": {
+		"typo3-cms-scripts": [
+			"typo3cms install:fixfolderstructure",
+			"typo3cms install:generatepackagestates"
+		],
+		"post-autoload-dump": [
+			"@typo3-cms-scripts"
+		]
 	},
-	"extra" : {
-		"typo3/cms" : {
-			"cms-package-dir" : "{$vendor-dir}/typo3/cms",
-			"web-dir" : "public_html"
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": "public_html"
 		},
 		"helhum/typo3-console": {
 			"install-extension-dummy": false
 		},
 		"helhum/dotenv-connector": {
-			"cache-dir": "var/cache"
+			"cache-dir": "var/cache",
+			"env-file": ".env"
 		}
 	}
+
 }

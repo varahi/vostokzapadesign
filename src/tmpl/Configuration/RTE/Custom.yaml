@@ -1,0 +1,127 @@
+# Load default processing options
+imports:
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  externalPlugins:
+  config:
+    entities: 'false'
+    allowedContent: true
+    format_tags: "p;h1;h2;h3;h4;h5;pre"
+
+    stylesSet:
+      - { name: "odd", element: "p", attributes: { class: "odd"} }
+      - { name: "attenion", element: "p", attributes: { class: "attension"} }
+      - { name: "phone", element: "p", attributes: { class: "phone"} }
+      - { name: "price", element: "p", attributes: { class: "price"} }
+      - { name: "lightgrey", element: "p", attributes: { class: "lightgrey"} }
+      - { name: "hotline", element: "p", attributes: { class: "hotline"} }
+      - { name: "red", element: "p", attributes: { class: "red"} }
+      - { name: "smaller", element: "p", attributes: { class: "smaller"} }
+      - { name: "bigger", element: "p", attributes: { class: "bigger"} }
+      - { name: "no-margin-top", element: "p", attributes: { class: "no-margin-top"} }
+      - { name: "no-margin-right", element: "p", attributes: { class: "no-margin-right"} }
+      - { name: "no-margin-bottom", element: "p", attributes: { class: "no-margin-bottom"} }
+      - { name: "no-margin-left", element: "p", attributes: { class: "no-margin-left"} }
+      - { name: "no-margin", element: "p", attributes: { class: "no-margin"} }
+      - { name: "table-1", element: "p", attributes: { class: "table-1"} }
+      - { name: "table-2", element: "p", attributes: { class: "table-2"} }
+
+      # Inline styles
+      - { name: "odd", element: "span", attributes: { class: "odd"} }
+      - { name: "attenion", element: "span", attributes: { class: "attension"} }
+      - { name: "phone", element: "span", attributes: { class: "phone"} }
+      - { name: "price", element: "span", attributes: { class: "price"} }
+      - { name: "lightgrey", element: "span", attributes: { class: "lightgrey"} }
+      - { name: "hotline", element: "span", attributes: { class: "hotline"} }
+      - { name: "red", element: "span", attributes: { class: "red"} }
+      - { name: "smaller", element: "span", attributes: { class: "smaller"} }
+      - { name: "bigger", element: "span", attributes: { class: "bigger"} }
+      - { name: "no-margin-top", element: "span", attributes: { class: "no-margin-top"} }
+      - { name: "no-margin-right", element: "span", attributes: { class: "no-margin-right"} }
+      - { name: "no-margin-bottom", element: "span", attributes: { class: "no-margin-bottom"} }
+      - { name: "no-margin-left", element: "span", attributes: { class: "no-margin-left"} }
+      - { name: "no-margin", element: "span", attributes: { class: "no-margin"} }
+      - { name: "table-1", element: "span", attributes: { class: "table-1"} }
+      - { name: "table-2", element: "span", attributes: { class: "table-2"} }
+
+    toolbarGroups:
+      - { name: styles, groups: [ styles, format ] }
+      - { name: basicstyles, groups: [ basicstyles ] }
+      - { name: paragraph, groups: [ list, indent, blocks, align ] }
+      - { name: links, groups: [ links ] }
+      - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
+      - { name: editing, groups: [ spellchecker ] }
+      - { name: insert, groups: [ insert ] }
+      - { name: tools, groups: [ table, specialchar ] }
+      - { name: document, groups: [ mode ] }
+
+    justifyClasses:
+      - text-left
+      - text-center
+      - text-right
+      - text-justify
+
+    extraPlugins:
+      - justify
+    #  - specialchar
+    #  - codesnippet
+    #  - showblocks
+
+    removePlugins:
+    #      - image
+
+    removeButtons:
+      - About
+      - Maximize
+      - ShowBlocks
+      - BGColor
+      - TextColor
+      - Iframe
+      - FontSize
+      - Flash
+      - HorizontalRule
+      - Smiley
+      - PageBreak
+      - Anchor
+      - BidiLtr
+      - BidiRtl
+      - Language
+      - JustifyBlock
+      - Blockquote
+      - CreateDiv
+      - Underline
+      - Strike
+      - HiddenField
+      - ImageButton
+      - Button
+      - Select
+      - Textarea
+      - TextField
+      - Radio
+      - Checkbox
+      - Form
+      - SelectAll
+      - Find
+      - Replace
+      - Cut
+      - Copy
+      - Paste
+      - PasteText
+      - PasteFromWord
+      - Templates
+      - Save
+      - NewPage
+      - Preview
+      - Print
+      - Underline
+      - Subscript
+      - Superscript
+      - Code
+
+    # Limit the height of the editor
+    height: 500

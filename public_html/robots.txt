@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /*?id=*
+Disallow: /fileadmin/_temp_/
+Disallow: /fileadmin/_migrated/
+Disallow: /fileadmin/templates/
+Disallow: /typo3/ 
+Disallow: /typo3temp/
+Disallow: /typo3conf/ 
+Disallow: /uploads/
+Disallow: /sxd/
+Disallow: /webstat/ 
+Host: http://vostokzapadesign.ru
+Sitemap: http://vostokzapadesign.ru/?sitemap=pages&type=1533906435

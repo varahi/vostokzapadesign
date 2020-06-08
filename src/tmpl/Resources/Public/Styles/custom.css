@@ -1,0 +1,26 @@
+.pull-lg-8 .ce-gallery img {
+	width: auto !important;
+	max-width: 100% !important;
+	height: auto !important;
+}
+.left-column .row-images-list .csc-textpic-image img {
+	width: auto !important;
+	max-width: 100% !important;
+	height: auto !important;
+}
+.news-single .news-img-wrap {
+
+}
+
+/*
+a#nav-icon {
+	border: 1px solid red !important;
+	position: fixed;
+	z-index: 9999;
+	top: 10px;
+	right: 20px;
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+*/

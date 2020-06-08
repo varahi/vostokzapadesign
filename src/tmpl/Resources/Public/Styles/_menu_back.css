@@ -1,0 +1,312 @@
+/* Main menu
+-------------------------------------------------- */
+.header {
+	padding: 38px 0 0 0;
+}
+.header > div {
+	padding: 0;	
+}
+
+img.image-responsive {
+	width: 100%;
+	height: auto;
+}
+.header-image {
+	max-width: 850px;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.image-caption {
+	position: absolute;
+	left: -10px;
+	bottom: 21px;
+}
+
+.header__phone {
+	font-size: 18px;
+	color: #666666;	
+	padding: 0;
+	margin-bottom: 10px;
+}
+.header__phone a {
+	text-decoration: none;
+}
+.header__map-link {
+	font-size: 10px;
+	padding: 0 0 0 20px;	
+}
+#nav-icon {
+	display: none !important;
+}
+
+/* Main menu
+-------------------------------------------------- */
+.sm-clean {
+	padding: 0;
+  background: transparent;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+ul#main-menu {
+	padding: 0;
+	margin: 0;
+}
+.navbar {
+	padding: 50px 0 0 0;
+}
+.sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active {
+	font-family: 'FreeSetCyrillic';
+	font-size: 14px;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;		
+}
+span.sub-arrow {
+	display: none;
+}
+.sm-clean a.has-submenu {
+	/*padding-right: 24px;*/
+	padding-right: 0;
+}
+
+ul.sm-clean a,
+ul.sm-clean a.has-submenu,
+ul.sm-clean a:hover,
+ul.sm-clean a:focus {
+	border-left: 1px solid #d1d2d4;
+	padding: 5px 21px 15px 20px;
+	color: #333;
+}
+ul.sm-clean a:hover {
+	background: #d90007;
+	color: #fff !important;
+}
+ul.sm-clean li.last-item a {
+	padding-right: 23px;
+	border-right: 1px solid #d1d2d4;
+}
+
+ul.sm-clean li.active a {
+	color: #d90007;
+}
+
+/* Mmmenu navbar icon
+-------------------------------------------------- */
+
+/* Icon */
+#nav-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  display: block;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: #000;
+  border-radius: 0px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; 
+}
+
+/* Icon */
+/* To Do: set burger icon for class .mm-menu_opened */
+#nav-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 14px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon span:nth-child(3) {
+  top: 28px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.mm-opening #nav-icon span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+
+/* Mmenu
+-------------------------------------------------- */
+
+.mm-opening #nav-icon span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.mm-opening #nav-icon span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 26px;
+    left: 8px;
+}
+
+.mm-tabstart,
+.mm-sronly {
+	display: none;
+}
+
+.mm-title {
+ 	font-family: Trebuchet MS;
+ 	font-size: 26px;
+}
+.mm-menu .mm-navbar a, .mm-menu .mm-navbar > * {
+ 	color: #333;
+}
+.mm-listview {
+ 	font-family: Trebuchet MS;
+ 	font-size: 24px;
+ 	line-height: 30px;
+ 	color: #333;
+}
+.mm-listview li:HOVER {
+	color: #d90007;
+}
+.mm-counter {
+	display: none !important;
+}
+.mm-navbar-top {
+	height: 60px;
+	padding-top: 10px !important;
+}
+.mm-hasnavbar-top-1 .mm-panels,
+.mm-navbar-top-2 {
+    top: 60px;
+}
+.mm-navbar .mm-btn:first-child {
+	left: 0;
+	top: 10px;
+}
+
+.mm-listview .mm-next::before,
+.mm-navbar-bottom {
+	border: none;
+}
+
+.mm-hasnavbar-bottom-1 .mm-panels,
+.mm-navbar-bottom-2 {
+   bottom: 10px;
+}
+
+/*
+.mm-navbar-bottom {
+	height: 0px;
+	margin-top: -30px;
+}
+*/
+/*
+.mm-navbar.mm-hasbtns {
+	padding: 40px 40px;
+}*/
+
+
+/* Traingle for mmenu */
+.mm-menu .mm-listview > li .mm-next::after {
+	border-color: #333;
+}
+.mm-menu .mm-btn::after, .mm-menu .mm-btn::before {
+	border-color: #333;
+}
+.mm-next::after, .mm-prev::before {
+ border-top: 2px solid transparent;
+ border-left: 2px solid transparent;
+ display: block;
+ width: 8px;
+ height: 8px;
+ margin: auto;
+ position: absolute;
+ top: 0;
+}
+a.mm-close {
+	display: none;
+}
+
+/*
+#menu {
+	display: none;
+}*/
+
+/*
+.mm-panels > .mm-panel::after, .mm-panels > .mm-panel::before {
+ content: '';
+ display: block;
+ height: 0px;
+}*/
+
+/*.mm-hasnavbar-bottom-1 .mm-panels,
+.mm-navbar-bottom-2 {
+	bottom: 10px;
+}*/
+
+
+
+/*
+.left-menu li ul {
+	list-style: none;
+	margin: 5px 0;
+	padding: 0 0 0 10px;
+}
+.left-menu li ul li a {
+	line-height: 20px;
+	background: url(../Images/icons/ico-gt-lgrey.gif) left 7px no-repeat;
+}
+.left-menu li ul li a:hover {
+	background: url(../Images/icons/ico-gt-red.gif) left 7px no-repeat;
+}
+.left-menu li ul li.active a {
+	color: #333333;
+	text-decoration: none;
+	background: url(../Images/icons/ico-gt-red.gif) left 7px no-repeat;
+}
+.left-menu li ul li.active a:hover {
+	text-decoration: underline;
+}
+*/
+
+
