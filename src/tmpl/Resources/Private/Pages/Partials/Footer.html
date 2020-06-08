@@ -1,5 +1,5 @@
 <div id="bg"></div>
-<footer class="footer">
+<footer class="footer mm-page mm-slideout">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-4 footer__left">
@@ -14,4 +14,15 @@
 		</div>
 	</div>
 </footer>
-<f:cObject typoscriptObjectPath="lib.mMenu" />
+<script>
+	document.addEventListener(
+			"DOMContentLoaded", () => {
+				new Mmenu( "#menu", {
+					"extensions": [
+						"pagedim-black",
+						"theme-dark"
+					]
+				});
+			}
+	);
+</script>

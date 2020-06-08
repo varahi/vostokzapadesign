@@ -1,7 +1,7 @@
 /* Dummy
  -------------------------------------------------- */
 a, a:hover, a:focus {
-  color: #d90007;
+  color: #D90007;
   text-decoration: underline; }
 
 a img {
@@ -23,8 +23,8 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  background: #d1d2d4 url(../Images/bg/bg_decoration_1.gif) 1000px 51px no-repeat;
-  color: #333;
+  background: #D1D2D4 url(../Images/bg/bg_decoration_1.gif) 1000px 51px no-repeat;
+  color: #333333;
   font-size: 12px;
   font-family: Trebuchet MS, Arial, Helvetica, sans-serif; }
 
@@ -44,12 +44,13 @@ body {
   min-width: 240px;
   margin: 0;
   box-sizing: border-box; }
+
 /* Content
  -------------------------------------------------- */
 .container-inner {
   padding: 0 40px 0 50px;
-  border-left: solid 40px #333;
-  border-right: solid 20px #c4c6c8;
+  border-left: solid 40px #333333;
+  border-right: solid 20px #C4C6C8;
   margin: 0 200px 0 0;
   min-height: 100%;
   background: #fff;
@@ -62,7 +63,7 @@ body {
     margin: 19px 0; }
   .content h1 {
     font-size: 24px;
-    color: #d90007;
+    color: #D90007;
     font-weight: normal;
     margin: 0 0 19px 0; }
   .content h2 {
@@ -87,18 +88,14 @@ body {
 .banner {
   margin: 0 0 29px 0;
   float: left;
-  background: #a7a9ac right top no-repeat;
+  background: #A7A9AC right top no-repeat;
   padding: 0 0 0 20px;
   width: 100%;
   max-width: 242px;
   height: 105px;
-  border-left: solid 10px #e3e4e6;
-  /*a {
-   display: block; 
-   width: 150px;
-   }*/ }
+  border-left: solid 10px #E3E4E6; }
   .banner h2 {
-    color: #fff;
+    color: #FFFFFF;
     font-size: 18px;
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     margin: 10px 0 10px; }
@@ -106,12 +103,17 @@ body {
     margin: 5px 0; }
   .banner h3 {
     font-size: 14px;
-    margin: 19px 0 5px 0; }
+    margin: 19px 0 5px 0;
+    /*a {
+     display: block; 
+     width: 150px;
+     }*/ }
   .banner a:hover {
     text-decoration: underline; }
   .banner span {
     padding: 0 20px 0 0;
     background: url(../Images/icons/ico-arrow-white.gif) right 6px no-repeat; }
+
 /* News
  -------------------------------------------------- */
 .news-item-row {
@@ -138,7 +140,8 @@ a.link-back, p.back-to-list a {
   font-size: 14px;
   margin: 5px 0 2px 0;
   display: block;
-  color: #a7a9ac; }
+  color: #A7A9AC; }
+
 /* News pagination
  -------------------------------------------------- */
 ul.f3-widget-paginator {
@@ -150,11 +153,12 @@ ul.f3-widget-paginator {
   ul.f3-widget-paginator li.current {
     margin-top: 2px !important;
     padding: 1px 7px;
-    background: #a7a9ac !important;
-    color: #fff; }
+    background: #A7A9AC !important;
+    color: #FFFFFF; }
 
 .page-navigation p {
   display: none; }
+
 /* Row Images
  -------------------------------------------------- */
 .row-images-list .csc-textpic-image img {
@@ -163,7 +167,7 @@ ul.f3-widget-paginator {
   height: auto; }
 
 .csc-textpic-image img {
-  border: 10px solid #f0f1f2;
+  border: 10px solid #F0F1F2;
   padding: 0px 0px;
   display: block; }
 
@@ -173,6 +177,7 @@ ul.f3-widget-paginator {
 .row-images-list {
   margin-left: -15px;
   margin-right: -15px; }
+
 /* Gallery
  -------------------------------------------------- */
 .gallery {
@@ -188,10 +193,12 @@ ul.f3-widget-paginator {
     height: auto; }
   .gallery__item-caption {
     text-align: center; }
+
 /* Table 
  -------------------------------------------------- */
 table img {
   padding: 0 5px !important; }
+
 /* Custom content elemnets
  -------------------------------------------------- */
 .course-block {
@@ -207,6 +214,7 @@ table img {
   .course-block img {
     width: 100%;
     height: auto; }
+
 /* FCE Teachers
  -------------------------------------------------- */
 /*.master { 
@@ -246,24 +254,26 @@ table img {
   .left-menu li {
     padding: 0 0 3px 0; }
     .left-menu li a {
-      color: #d90007;
+      color: #D90007;
       line-height: 15px;
       display: block;
       padding: 5px 0 5px 10px;
       text-decoration: underline; }
   .left-menu li.active a, .left-menu li a:hover {
-    color: #333;
-    background: #f0f1f2;
+    color: #333333;
+    background: #F0F1F2;
     /*background: #F0F1F2 url(../Images/icons/ico-arrow-red.gif) 251px 13px no-repeat; */ }
   .left-menu li.active a {
     text-decoration: none; }
   .left-menu li.active a:hover {
     text-decoration: underline; }
+
 /* Right column
  -------------------------------------------------- */
 .right-column {
   padding-left: 25px;
-  border-left: solid 11px #f0f1f2; }
+  border-left: solid 11px #F0F1F2; }
+
 /* Footer
  -------------------------------------------------- */
 .footer {
@@ -274,8 +284,8 @@ table img {
   color: #000;
   padding: 15px;
   box-sizing: border-box;
-  border-left: solid 40px #333;
-  border-right: solid 20px #c4c6c8;
+  border-left: solid 40px #333333;
+  border-right: solid 20px #C4C6C8;
   background: #fff url(../Images/bg/bg_center.jpg) left bottom no-repeat; }
   .footer__right {
     margin-left: -30px; }
@@ -289,18 +299,18 @@ table img {
       .footer__menu li span {
         font-size: 10px;
         padding: 0 8px;
-        color: #d1d2d4; }
+        color: #D1D2D4; }
   .footer__left p {
     font-size: 10px; }
-    .footer__left h3 {
-      font-size: 18px;
-      color: #333; }
+  .footer__left h3 {
+    font-size: 18px;
+    color: #333333; }
   .footer__info {
-    color: #a7a9ac;
+    color: #A7A9AC;
     font-size: 10px; }
 
 .developer a {
-  color: #d90007; }
+  color: #D90007; }
 
 #toTop {
   width: 100px;

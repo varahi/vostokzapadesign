@@ -36,8 +36,8 @@ config {
     setJS_openPic = 0
 
     # CSS handling
-    compressCss = 1
-    concatenateCss = 1
+    compressCss = 0
+    concatenateCss = 0
 
     # JS handling
     #compressJs = 1
