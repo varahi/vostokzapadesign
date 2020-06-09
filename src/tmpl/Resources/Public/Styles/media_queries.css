@@ -343,7 +343,17 @@
 
 }
 
+/*
+@media only screen and (max-width : 450px) {
+	.ce-gallery figure img {
+		width: 100%;
+		height: auto;
+	}
+}
+*/
+
 @media only screen and (max-width : 420px) {
+
 	.navbar-toggler {
 		float: right;
 		margin-right: -20px;
