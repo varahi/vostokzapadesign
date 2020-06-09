@@ -3,7 +3,9 @@
 <div class="row row-images-list">
 	<f:for each="{row.columns}" as="column" iteration="iterator">
 		<div class="col-md-3 col-sm-6 col-lg-3">
-			<f:render partial="Media/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings}" />
+			<f:if condition="{column.media}">
+				<f:render partial="Media/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings}" />
+			</f:if>
 		</div>
 		<f:if condition="{iterator.cycle} % 4">
 			<f:then>
