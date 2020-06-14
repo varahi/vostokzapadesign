@@ -4421,10 +4421,14 @@
                 "typo3/cms-core": ">= 8.7.0, <= 9.5.99"
             },
             "replace": {
-                "typo3-ter/typoscript_code": "self.version",
-                "typoscript_code": "self.version"
+                "typo3-ter/typoscript_code": "self.version"
             },
             "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "typoscript_code"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Itribe\\TyposcriptCode\\": "Classes/"
