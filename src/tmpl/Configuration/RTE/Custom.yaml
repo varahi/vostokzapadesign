@@ -3,11 +3,21 @@ imports:
   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+  - { resource: "EXT:tmpl/Configuration/RTE/Editor/Plugins.yaml" }
 
 # Add configuration for the editor
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
 editor:
   externalPlugins:
+    specialchar:
+      resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/specialchar/"
+    codesnippet:
+      resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/codesnippet/"
+    colorbutton:
+      resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/colorbutton/"
+    colordialog:
+      resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/colordialog/"
+
   config:
     entities: 'false'
     allowedContent: true
@@ -68,9 +78,11 @@ editor:
 
     extraPlugins:
       - justify
-    #  - specialchar
-    #  - codesnippet
-    #  - showblocks
+      - specialchar
+      - colorbutton
+      - codesnippet
+      - colordialog
+      - showblocks
 
     removePlugins:
     #      - image
