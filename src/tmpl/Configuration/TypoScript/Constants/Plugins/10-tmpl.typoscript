@@ -35,4 +35,5 @@ page {
         phone = +7 (495) 641-83-51
     }
     additionalMobileMenu = 1,420
+    mobileMenu.excludeUids = 447,449,295,38,87
 }

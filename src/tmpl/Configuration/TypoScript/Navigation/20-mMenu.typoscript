@@ -10,6 +10,7 @@ lib.mMenu  {
     </a>
     )
     20 = HMENU
+    20.excludeUidList = {$page.mobileMenu.excludeUids}
     20.special = directory
     20.special.value = {$page.additionalMobileMenu}
     20 {
