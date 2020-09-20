@@ -11,12 +11,12 @@ editor:
   externalPlugins:
     specialchar:
       resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/specialchar/"
-    codesnippet:
-      resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/codesnippet/"
-    colorbutton:
-      resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/colorbutton/"
-    colordialog:
-      resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/colordialog/"
+#    codesnippet:
+#      resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/codesnippet/"
+#    colorbutton:
+#      resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/colorbutton/"
+#    colordialog:
+#      resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/colordialog/"
 
   config:
     entities: 'false'
@@ -69,6 +69,13 @@ editor:
       - { name: insert, groups: [ insert ] }
       - { name: tools, groups: [ table, specialchar ] }
       - { name: document, groups: [ mode ] }
+#      - { name: 'colors', items: [ 'TextColor', 'BGColor' ] }
+
+      #configuration example:
+    colorButton_enableAutomatic: false
+    colorButton_enableMore: false
+    colorButton_colors: "F49800,B9B9B9,75A75A"
+    #colorButton_colors: 000000,167951,93C0BD,F48E00
 
     justifyClasses:
       - text-left
@@ -80,9 +87,16 @@ editor:
       - justify
       - specialchar
       - colorbutton
-      - codesnippet
+#      - codesnippet
       - colordialog
       - showblocks
+      - font
+      - find
+      - bidi
+      - autolink
+      - panelbutton
+      - panel
+      - floatpanel
 
     removePlugins:
     #      - image

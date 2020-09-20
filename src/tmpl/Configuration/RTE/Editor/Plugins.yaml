@@ -9,7 +9,7 @@ editor:
     autolinking: { resource: "EXT:rte_ckeditor/Resources/Public/JavaScript/Plugins/autolinking.js" }
 
     # Codesnippet
-    codesnippet: { resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/codesnippet/plugin.js" }
+#    codesnippet: { resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/codesnippet/plugin.js" }
 
     # Specialchar
     specialchar: { resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/specialchar/plugin.js" }
@@ -19,3 +19,12 @@ editor:
 
     # Colordialog
     colordialog: { resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/colordialog/plugin.js" }
+
+    # Panelbutton
+    panelbutton: { resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/panelbutton/plugin.js" }
+
+    # Panel
+    panel: { resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/panel/plugin.js" }
+
+    # FloatPanel
+    floatpanel: { resource: "EXT:tmpl/Resources/Public/CKeditor/Plugins/floatpanel/plugin.js" }
