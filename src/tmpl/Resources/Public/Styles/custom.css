@@ -11,6 +11,13 @@
 .news-single .news-img-wrap {
 
 }
+.content ul.slides {
+	margin: 0;
+	padding: 0;
+}
+.content ul.slides li {
+
+}
 
 /*
 a#nav-icon {

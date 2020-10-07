@@ -69,13 +69,14 @@ editor:
       - { name: insert, groups: [ insert ] }
       - { name: tools, groups: [ table, specialchar ] }
       - { name: document, groups: [ mode ] }
-#      - { name: 'colors', items: [ 'TextColor', 'BGColor' ] }
+#      - { name: 'colors', groups: [ 'TextColor', 'BGColor' ] }
+      - {name: 'colors'}
 
       #configuration example:
     colorButton_enableAutomatic: false
     colorButton_enableMore: false
-    colorButton_colors: "F49800,B9B9B9,75A75A"
-    #colorButton_colors: 000000,167951,93C0BD,F48E00
+    #colorButton_colors: "F49800,B9B9B9,75A75A"
+    colorButton_colors: 000000,167951,93C0BD,F48E00
 
     justifyClasses:
       - text-left
